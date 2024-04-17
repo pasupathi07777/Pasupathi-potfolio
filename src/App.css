@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
+/* import @import tailwind base;
+import @import tailwind components;
+import @import tailwind utilities; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  padding-top: 32px
+}
+header ul li{
+  @apply px-2;
+}
+.bg-color{
+ 
+  background-color: #2b2d77;
+}
+.bg-color-2{
+  background: rgb(85, 81, 227);
+  
+}
+.mobile-view-nav{
+  @apply fixed top-8 left-0 w-full h-1/5  bg-gray-800 ;
+  ;
+
+}
+.mobile-view-nav li{
+  @apply  border-b-2 w-full h-full flex align-middle justify-center m-0 ;
+}
+.about img {
+  max-width: 400px;
+}
+.btn{
+  padding: 2px 4px ;
+  font-weight: 500;
+}
+html{
+  scroll-behavior: smooth;
 }
