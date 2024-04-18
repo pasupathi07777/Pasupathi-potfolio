@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
-import { Fa500Px } from 'react-icons/fa'
+
 
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
     let [togglemenu, settogglemenu] = useState(false)
     return (
         <header className='flex justify-between px-5 py-1 bg-color-2 fixed top-0 left-0 z-10 w-full'>
-            <a className='font-bold text-black' href="#">Pasupathi.S</a>
+            <p className='font-bold text-black' >Pasupathi.S</p>
             <nav className='hidden sm:block'>
                 <ul className=' flex text-white '>
                     <li><a href="#hero">Home</a></li>

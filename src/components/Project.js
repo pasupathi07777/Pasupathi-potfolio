@@ -2,6 +2,7 @@ import React from 'react'
 import img1 from '../img/download1.jpg'
 import img2 from '../img/download2.jpg'
 import img3 from '../img/download3.jpg'
+import { Link } from 'react-router-dom'
 
 const Project = () => {
     return (
@@ -21,21 +22,22 @@ const Project = () => {
                         <img  className=' flex-grow   ' src={img1} alt="" />
                         <div className='absolute top-0 left-0 right-0 bottom-0 bg-color opacity-0 duration-500  hover:opacity-100 flex justify-center flex-col items-center'>
                             <p className='text-center mb-3'>E-comer website</p>
-                            <a className='btn hover:border-2 bg-color-2 rounded border-white' href='#'>View projects</a>
+                            <Link  className='btn hover:border-2 bg-color-2 rounded border-white'  to={'/project'}> View projects</Link>
                         </div>
                     </div>
                     <div className='relative flex  overflow-hidden rounded   '>
                         <img  className='flex-grow   ' src={img2} alt="" />
                         <div  className='absolute top-0 left-0 right-0 bottom-0 bg-color opacity-0 duration-500  hover:opacity-100 flex justify-center flex-col items-center'>
                             <p  className='text-center mb-3'>E-comer website</p>
-                            <a className='btn hover:border-2 bg-color-2 rounded border-white' href='#'>View projects</a>
+                            <Link  className='btn hover:border-2 bg-color-2 rounded border-white'  to={'/project'}> View projects</Link>
                         </div>
                     </div>
                     <div className='relative flex  overflow-hidden rounded'>
                         <img className=' flex-grow   ' src={img3} alt="" />
                         <div  className='absolute top-0 left-0 right-0 bottom-0 bg-color opacity-0 duration-500  hover:opacity-100 flex justify-center flex-col items-center'>
                             <p  className='mb-3'>E-comer website</p>
-                            <a className='btn hover:border-2 bg-color-2 rounded border-white' href='#'>View projects</a>
+                            {/* <a className='btn hover:border-2 bg-color-2 rounded border-white' href='#'>View projects</a> */}
+                            <Link  className='btn hover:border-2 bg-color-2 rounded border-white'  to={'/project'}> View projects</Link>
                         </div>
                     </div>
 
