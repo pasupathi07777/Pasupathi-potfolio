@@ -33,12 +33,12 @@ function Resumeimg() {
   };
 
   return (
-    <div className="m-0 p-0 flex justify-center text-center w-full overflow-y-auto h-screen ">
+    <div className=" w-full h-full flex justify-center  sm:overflow-y-auto ">
       {pdfFile && (
-        <div className='max-w-[700px] h-[300px]'>
-          <Document file={pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
+        <div className='w-full max-w-[600px]  items-center object-cover my-auto sm:m-0'>
+          <Document className='' file={pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
             {Array.from(new Array(numPages), (el, index) => (
-              <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+              <Page className='dd' key={`page_${index + 1}`} pageNumber={index + 1} />
             ))}
           </Document>
         </div>
@@ -48,4 +48,19 @@ function Resumeimg() {
 }
 
 export default Resumeimg;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
