@@ -7,16 +7,24 @@ import @import tailwind utilities; */
 @import 'tailwindcss/utilities';
 
 
-
-
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
 .App{
-  padding-top: 32px
+  /* padding-top: 32px; */
+  width: 100vw;
+  height: 100vh;
+  background-color: #2b2d77;
 }
 header ul li{
   @apply px-2;
@@ -46,4 +54,13 @@ header ul li{
 }
 html{
   scroll-behavior: smooth;
+}
+/* pdfStyles.css */
+
+.react-pdf__Page__annotations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

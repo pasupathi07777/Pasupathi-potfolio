@@ -1,35 +1,30 @@
-
-
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-// import Header from './Header';
-// import About from './components/About';
-// import Contact from './components/Contact';
-// import Footer from './components/Footer';
-// import Hero from './components/Hero';
-// import Project from './components/Project';
-// import Resume from './components/Resume';
-import Allproject from './components/Allproject';
+// import Allproject from './components/Allproject';
 import Allpage from './components/Allpage';
+import Advanceproject from './components/Advanceproject';
+import Miniproject from './components/Miniproject'
+import Gamesproject from './components/Gamesproject'
+import Resumeimg from './components/Resumeimg';
+import { Dataprovider } from './alldata/data';
 
 function App() {
   return (
     <div className="App">
-      {/* <Header />
-      <Hero />
-      <About />
-      <Project />
-
-
-      <Resume />
-      <Contact />
-      <Footer /> */}
-      
+      <Dataprovider>
       <Routes>
         <Route index element={<Allpage/>}/>
-        <Route path='/project' element={<Allproject />} />
+        <Route path='/Advanceproject' element={<Advanceproject/>} />
+        <Route path='/Miniproject' element={<Miniproject/>} />
+        <Route path='/Gamesproject' element={<Gamesproject/>} />
+        <Route path='/resume' element={<Resumeimg/>} />
 
       </Routes>
+
+      </Dataprovider>
+    
+      
+      
       
 
     </div>
