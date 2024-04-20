@@ -18,23 +18,23 @@ const Project = () => {
             <div className='w-full flex justify-center '>
                
 
-                <div className='flex gap-2 flex-col sm:flex-row justify-center '>
-                    <div className='relative flex overflow-hidden rounded  '>
-                        <img  className=' flex-grow   ' src={project.project_img[0]} alt="" />
+                <div className='flex gap-5 flex-col sm:flex-row justify-center w-full   '>
+                    <div className='relative flex overflow-hidden rounded object-cover w-full  '>
+                        <img  className='  w-full h-[200px]  ' src={project.project_img[0]} alt="" />
                         <div className='absolute top-0 left-0 right-0 bottom-0 bg-color opacity-0 duration-500  hover:opacity-100 flex justify-center flex-col items-center'>
                             <p className='text-center mb-3'>{project.projects_1}</p>
                             <Link  className='btn hover:border-2 bg-color-2 rounded border-white'  to={'/Advanceproject'}>{project.btn}</Link>
                         </div>
                     </div>
-                    <div className='relative flex  overflow-hidden rounded   '>
-                        <img  className='flex-grow   ' src={project.project_img[1]} alt="" />
+                    <div className='relative flex  overflow-hidden rounded object-cover w-full   '>
+                        <img  className='  w-full h-[200px]  ' src={project.project_img[1]} alt="" />
                         <div  className='absolute top-0 left-0 right-0 bottom-0 bg-color opacity-0 duration-500  hover:opacity-100 flex justify-center flex-col items-center'>
                             <p  className='text-center mb-3'>{project.projects_2}</p>
                             <Link  className='btn hover:border-2 bg-color-2 rounded border-white'  to={'/Miniproject'}> {project.btn}</Link>
                         </div>
                     </div>
-                    <div className='relative flex  overflow-hidden rounded'>
-                        <img className=' flex-grow   ' src={project.project_img[2]} alt="" />
+                    <div className='relative flex  overflow-hidden rounded w-full'>
+                        <img className='w-full h-[200px] ' src={project.project_img[2]} alt="" />
                         <div  className='absolute top-0 left-0 right-0 bottom-0 bg-color opacity-0 duration-500  hover:opacity-100 flex justify-center flex-col items-center'>
                             <p  className='mb-3'>{project.projects_3}</p>
                             {/* <a className='btn hover:border-2 bg-color-2 rounded border-white' href='#'>View projects</a> */}

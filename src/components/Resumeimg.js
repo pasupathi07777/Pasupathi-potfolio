@@ -48,19 +48,3 @@ function Resumeimg() {
 }
 
 export default Resumeimg;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -10,7 +10,7 @@ const Resume = () => {
     <section id='Resume' className='flex  flex-col sm:flex-row bg-color py-10 px-5 gap-8'>
       <div className=' sm:w-1/2 flex justify-center sm:justify-end'>
         <div className=' flex justify-center '>
-          <img className='rounded' src={resume.img} alt="" />
+          <img className='rounded w-[300px]' src={resume.img} alt="" />
         </div>
       </div>
       <div className='sm:w-1/2 flex justify-center sm:justify-start'>
