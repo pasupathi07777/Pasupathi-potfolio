@@ -11,25 +11,48 @@ import @import tailwind utilities; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+ 
+ 
+
 }
+html::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+html::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle when hovered */
+}
+
 #root{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+
 }
 .App{
 
   width: 100vw;
   height: 100vh;
   background-color: #2b2d77;
-  /* overflow-y: auto */
+  /* overflow-y: auto;
+  scroll-behavior: smooth */
 }
 header ul li{
   @apply px-2;

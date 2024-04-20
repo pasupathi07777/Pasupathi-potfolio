@@ -11,16 +11,14 @@ import Resume from './Resume';
 const Allpage = () => {
   return (
     <>
-    <Header />
+      <Header />
       <Hero />
       <About />
-     
       <Project />
-
-
       <Resume />
       <Contact />
       <Footer />
+
     </>
   )
 }
