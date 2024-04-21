@@ -84,8 +84,17 @@ export let Dataprovider = ({ children }) => {
     let about = {
         image: Aboutimg,
         title: "About me",
-        para_1: "Hi  ,My name is Pasupathi . I am a Frontend Developer . I build butiful website using react ",
-        para_2: "Iam a proficient in Frontend skills like Html,Css,Javascript,Bootstrap,Tailwindcss,React and many more..."
+        para_1: "Hi  ,My name is Pasupathi . I am a Web Developer . I build butiful website using react ",
+        para_2: "Iam a proficient in Frontend skills like  ",
+        skils:"Html,Css,Javascript,Bootstrap,Tailwindcss,React,python",
+        title_2:"Education",
+        college_1:"NMS kamaraj College of Education",
+        college_1_year:"2017-2020",
+        college_1_degre:"DME",
+        college_2:"Satyam College Of Engineering and Technology",
+        college_2_year:"2023-2025",
+        college_2_degre:"BE",
+        
 
     }
 
@@ -141,9 +150,9 @@ export let Dataprovider = ({ children }) => {
         details: 
         [
 
-        { img: projectimg1, link: "https://food-in-res.netlify.app/" },
-        { img: projectimg2, link: "https://pasupathi-socialmedia.netlify.app/" },
-        { img: projectimg3, link: "https://nostra-ecomer.netlify.app/" },
+        { name:"Restarent website", img: projectimg1, link: "https://food-in-res.netlify.app/" },
+        { name:"SV-Media application ", img: projectimg2, link: "https://pasupathi-socialmedia.netlify.app/" },
+        { name:"Shoping Website", img: projectimg3, link: "https://nostra-ecomer.netlify.app/" },
 
 
         ]
@@ -153,13 +162,13 @@ export let Dataprovider = ({ children }) => {
     // mini project
     let miniproject = {
         details: [
-        { img: miniproject1, link: "https://javascript-starrating.netlify.app/" },
-        { img: miniproject2, link: "https://product-slider-javascript.netlify.app/" },
-        { img: miniproject3, link: "https://pop-pup-image-galary.netlify.app/" },
-        { img: miniproject4, link: "https://testimonial-slider-javascript.netlify.app/"},
-        { img: miniproject5, link: "https://product-filter-javascript.netlify.app/"},
-        { img: miniproject6, link: "https://javascript-product-menu.netlify.app/"},
-        { img: miniproject7, link: "https://todolist-pasupathi.netlify.app/"},
+        { name:"Star Rating", img: miniproject1, link: "https://javascript-starrating.netlify.app/" },
+        { name:"Product Slider", img: miniproject2, link: "https://product-slider-javascript.netlify.app/" },
+        { name:"Pop-Pup-image-galary", img: miniproject3, link: "https://pop-pup-image-galary.netlify.app/" },
+        { name:"Testimonial Slider", img: miniproject4, link: "https://testimonial-slider-javascript.netlify.app/"},
+        { name:"Product Filter", img: miniproject5, link: "https://product-filter-javascript.netlify.app/"},
+        { name:"Menu-Cart", img: miniproject6, link: "https://javascript-product-menu.netlify.app/"},
+        { name:"Todolist", img: miniproject7, link: "https://todolist-pasupathi.netlify.app/"},
 
 
         ]
@@ -168,7 +177,7 @@ export let Dataprovider = ({ children }) => {
     //    games project
     let gamesproject = {
         details: [
-        { img: gamesproject1, link: "https://tictact-game.netlify.app/" },
+        { name:"Tic-Tak-Toe", img: gamesproject1, link: "https://tictact-game.netlify.app/" },
       
 
 
