@@ -21,11 +21,11 @@ const Header = () => {
             </nav>
             {togglemenu && <nav className='block sm:hidden '  >
                 <ul className='flex flex-col mobile-view-nav    text-white  '>
-                    <li className='text-center p-0'><a onClick={()=>settogglemenu(false)} href="#hero">Home</a></li>
-                    <li className='text-center p-0'><a onClick={()=>settogglemenu(false)} href="#About">About</a></li>
-                    <li className='text-center p-0'><a onClick={()=>settogglemenu(false)} href="#Project">Project</a></li>
-                    <li className='text-center p-0'><a onClick={()=>settogglemenu(false)} href="#Resume">Resume</a></li>
-                    <li className='text-center p-0'><a onClick={()=>settogglemenu(false)} href="#Contact">Contact</a></li>
+                    <li className='text-center p-0'><a className='w-full' onClick={()=>settogglemenu(false)} href="#hero">Home</a></li>
+                    <li className='text-center p-0'><a className='w-full' onClick={()=>settogglemenu(false)} href="#About">About</a></li>
+                    <li className='text-center p-0'><a className='w-full' onClick={()=>settogglemenu(false)} href="#Project">Project</a></li>
+                    <li className='text-center p-0'><a className='w-full' onClick={()=>settogglemenu(false)} href="#Resume">Resume</a></li>
+                    <li className='text-center p-0'><a className='w-full' onClick={()=>settogglemenu(false)} href="#Contact">Contact</a></li>
 
                 </ul>
             </nav>}
