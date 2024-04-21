@@ -10,7 +10,7 @@ const About = () => {
       <div className='w-full flex justify-center object-cover sm:px-5'>
         <img className='  w-[300px]  rounded sm:max-w-[300px] min-w-[300px] h-[300px] ' src={about.image} alt="f" />
       </div>
-      <div className=' w-full  flex justify-center h-full'>
+      <div className=' w-full  flex justify-center h-full overflow-y-auto'>
         <div className='flex flex-col justify-center text-white w-full h-full'>
           <div className='flex flex-col justify-center w-full h-full '>
             <h1 className='text-4xl text-white border-b-4 w-[170px] border-bg-color-2  font-bold   mb-4' >{about.title}</h1>

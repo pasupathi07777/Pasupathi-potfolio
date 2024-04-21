@@ -10,7 +10,9 @@ import Resume from './Resume';
 
 const Allpage = () => {
   return (
-    <>
+    
+
+     <>
       <Header />
       <Hero />
       <About />
@@ -18,9 +20,16 @@ const Allpage = () => {
       <Resume />
       <Contact />
       <Footer />
+      
 
-    </>
+
+        </>
   )
 }
 
 export default Allpage
+
+
+
+
+
