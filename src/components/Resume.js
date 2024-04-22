@@ -32,9 +32,9 @@ const Resume = () => {
       const link = document.createElement('a');
       link.href = fff;
       // link.download = 'Resume.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      // document.body.appendChild(link);
+      // link.click();
+      // document.body.removeChild(link);
     }
   };
   
