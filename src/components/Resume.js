@@ -70,7 +70,7 @@ return (
           
 
         </p>
-        {/* <button onClick={downloadPdf} className='btn hover:border-2 bg-color-2 rounded border-white min-w-[120px] text-center' >{resume.Downlode_btn}</button> */}
+        <button onClick={downloadPdf} className='btn hover:border-2 bg-color-2 rounded border-white min-w-[120px] text-center' >{resume.Downlode_btn}</button>
       </div>
     </div>
   </section>
