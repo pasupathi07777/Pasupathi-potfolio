@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
   
 }
 html{
@@ -140,5 +142,28 @@ header ul li{
   width: 100%;
   height: 100%;
 }
+@keyframes slideRightToLeft {
+  0% {
+      transform: translateX(100%);
+      
+  }
+  50% {
+      transform: translateX(0%);
+    
+  }
+  100%{
+    transform: translateX(100%);
+
+  }
+}
+
+.slider {
+  /* background-color: red; */
+  width: 100%;
+
+  
+  animation: slideRightToLeft 5s  ease-in-out infinite;
+}
+
 
 

@@ -7,17 +7,19 @@ const Hero = () => {
 
 
     return (
-        <section className='flex  flex-col sm:flex-row px-5 py-10 bg-color-2 justify-center  align-middle gap-3 sm:gap-0 mt-[32px] '>
+        <section className='flex  flex-col sm:flex-row px-5 py-10 bg-color-2 justify-center  align-middle gap-5 sm:gap-0 mt-[32px] '>
 
             <div id='hero' className='sm:w-1/2 flex flex-col   justify-center align-middle'>
-                <div className='flex flex-col justify-center'>
-                    <h1 className=' text-white text-6xl font-hero-font  '>Hi, <br /> Im <span className='text-black'>{details.name} </span><p className='text-2xl'>{details.my_domine}</p></h1>
-
+                <div className='flex flex-col justify-center overflow-hidden'>
+                    <h1 className=' text-white text-6xl  '>Hi, <br /> Im <span className='text-black  font-hero-font'>{details.name} </span></h1>
+                   <div className=' overflow-hidden w-fit'>
+                   <p className='slider pe-2 text-2xl mt-2 font-semibold text-white'>{details.my_domine}</p>
+                   </div>
                   
 
 
-                    <div className='flex gap-4 py-3  '>
-                        <a target='_blank' href={details.linkin_link} rel="linkedin" className='hover:text-white'>{details.linkdin_logo}</a>
+                    <div className='flex gap-4 py-2  '>
+                        <a target='_blank' href={details.linkin_link} rel="noreferrer" className='hover:text-white'>{details.linkdin_logo}</a>
                        
                         <a target='_blank' href={details.gamil_link} rel="noreferrer" className='hover:text-white'>{details.gamil_logo}</a>
                         <a target='_blank' href={details.git_link} rel="noreferrer" className='hover:text-white'>{details.git_logo} </a>

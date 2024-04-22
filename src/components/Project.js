@@ -15,7 +15,7 @@ const Project = () => {
                 </div>
 
             </div>
-            <div className='w-full flex justify-center '>
+            <div className='w-full flex justify-center cursor-pointer '>
                
 
                 <div className='flex gap-5 flex-col sm:flex-row justify-center w-full   '>

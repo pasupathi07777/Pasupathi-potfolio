@@ -40,7 +40,7 @@ const Miniproject = () => {
   }, []); // Empty dependency array ensures this effect runs only once after mounting
 
   return (
-    <main className="w-full h-full sm:h-auto flex flex-wrap justify-center sm:justify-start px-2 py-2 m-0 overflow-y-auto bg-color">
+    <main className="w-full h-full sm:h-auto flex flex-wrap justify-center sm:justify-start px-2 py-2 m-0 overflow-y-auto bg-color cursor-pointer">
       {miniproject.details.map((a, i) =>
         <div key={i} className="project bg-transparent rounded overflow-hidden w-full max-w-[350px] sm:w-1/2 md:w-1/4 p-2 h-[200px] relative">
           <img className="h-full w-full rounded" src={a.img} alt="" />

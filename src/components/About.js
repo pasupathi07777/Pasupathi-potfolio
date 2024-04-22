@@ -21,7 +21,7 @@
             <div className='flex flex-col justify-center w-full h-full '>
               {/* <h1 className='text-4xl text-white border-b-4 w-[170px] border-bg-color-2  font-bold   mb-4' >{about.title}</h1> */}
               <p className='pb-3 w-full'>{about.para_1} </p>
-              <p className=' w-full ' >{about.para_2} <p className='pb-3 w-full font-bold   '>{`${about.skils} more ...`}</p></p>
+              <p className=' w-full ' >{about.para_2} <p className='pb-3 w-full font-bold   '>{`${about.skills} more ...`}</p></p>
               
               
               

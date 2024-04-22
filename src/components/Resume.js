@@ -19,11 +19,11 @@ const Resume = () => {
     <div className='sm:w-1/2 flex justify-center sm:justify-start'>
       <div className='flex flex-col justify-center text-white text-center'>
         {/* <h1 className='w-[150px] text-4xl text-white border-b-4 mx-auto  border-bg-color-2  font-bold   mb-4'>{resume.title}</h1> */}
-        <p className='flex -flex-col sm:flex-row gap-5'>
+        <p className='flex  sm:flex-col gap-5'>
         
-          <Link className='btn hover:border-2 bg-color-2 rounded border-white min-w-[120px] text-center'   to={'/resume'}> {resume.View_btn}</Link> 
+          <Link className='btn hover:border-2 bg-color-2 rounded border-white min-w-[120px] text-center font-semibold'   to={'/resume'}> {resume.View_btn}</Link> 
        
-          <a  className='btn hover:border-2 bg-color-2 rounded border-white min-w-[120px] text-center' href={fff} download={fff}> {resume.Downlode_btn}</a>
+          <a  className='btn hover:border-2 bg-color-2 rounded border-white min-w-[120px] text-center font-semibold' href={fff} download={fff}> {resume.Downlode_btn}</a>
           
           
           

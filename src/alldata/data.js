@@ -82,25 +82,22 @@ export let Dataprovider = ({ children }) => {
     }
 
 
-    // about
-
-
+  
     let about = {
         image: Aboutimg,
-        title: "About me",
-        para_1: "Hi  ,My name is Pasupathi . I am a Web Developer . I build butiful website using react ",
-        para_2: "My proficient in Frontend skills like  ",
-        skils:"Html Css Javascript Bootstrap Tailwindcss React python",
-        title_2:"Education",
-        college_1:"NMS kamaraj College of Education",
-        college_1_year:"2017-2020",
-        college_1_degre:"DME",
-        college_2:"Satyam College Of Engineering and Technology",
-        college_2_year:"2023-2025",
-        college_2_degre:"BE",
-        
-
-    }
+        title: "About Me",
+        para_1: "Hi, my name is Pasupathi. I am a Frontend Developer. I build beautiful websites using React.",
+        para_2: "I am proficient in frontend skills like:",
+        skills: "HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React, Python",
+        title_2: "Education",
+        college_1: "NMS Kamaraj College of Education",
+        college_1_year: "2017-2020",
+        college_1_degree: "Diploma in Mechanical Engineering",
+        college_2: "Satyam College of Engineering and Technology",
+        college_2_year: "2023-2025",
+        college_2_degree: "Bachelor of Engineering (BE)"
+    };
+    
 
 
     // project
@@ -120,13 +117,15 @@ export let Dataprovider = ({ children }) => {
 
     // resume
 
+    
     let resume = {
         title: "Resume",
         img: Resume,
-        View_btn: "Views CV",
-        Downlode_btn: "Downlode CV",
+        View_btn: "View CV",
+        Downlode_btn: "Download CV",
         pdf: Pasupathi_Resume
-    }
+    };
+    
 
     // contact
 
