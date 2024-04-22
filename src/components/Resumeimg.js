@@ -58,8 +58,8 @@ import fff from '../img/Resume.pdf';
 
 const Resumeimg = () => {
   const openPdfInNewTab = () => {
-    window.open(fff, '_blank');
-  };
+    window.open(fff, '_blank')
+  }
 
   const downloadPdf = () => {
     const link = document.createElement('a');

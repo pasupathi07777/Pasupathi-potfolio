@@ -7,18 +7,41 @@ import fff from '../img/Resume.pdf';
 
 const Resume = () => {
    let { resume } = useContext(database)
-   const openPdfInNewTab = () => {
-    window.open(fff, '_blank')
-  }
+  //  const openPdfInNewTab = () => {
+  //   window.open(fff, '_blank')
+  // }
 
-    const downloadPdf = () => {
-      const link = document.createElement('a');
-      link.href = fff;
-      link.download = 'Resume.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
+    // const downloadPdf = () => {
+    //   const link = document.createElement('a');
+    //   link.href = fff;
+    //   link.download = 'Resume.pdf';
+    //   document.body.appendChild(link);
+    //   link.click();
+    //   document.body.removeChild(link);
+    // }
+
+    const openPdfInNewTab = () => {
+      // Attempt to open the PDF in a new tab
+      const newWindow = window.open(fff, '_blank');
+      
+      // Check if the new tab was successfully opened
+      if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+        // Fallback: Open the PDF in the same tab
+        window.location.href = fff;
+      }
+    };
+    
+
+    
+  const downloadPdf = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    link.href = fff;
+    link.download = 'Resume.pdf';
+
+    // Simulate a click on the link to trigger the download
+    link.click();
+  };
 
 
  
