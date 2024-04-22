@@ -3,9 +3,10 @@ import { createContext } from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import Heroimg from '../img/header.jpg'
+import { FaGithub } from "react-icons/fa";
 
 // about
-import Aboutimg from '../img/about2.webp'
+import Aboutimg from '../img/about2.png'
 
 
 // projext
@@ -17,7 +18,8 @@ import img3 from '../img/download3.avif'
 
 // resume
 
-import Resume from '../img/resume.jpg'
+import Resume from '../img/resume.png'
+
 import Pasupathi_Resume from '../img/Resume.pdf'
 
 
@@ -69,10 +71,12 @@ export let Dataprovider = ({ children }) => {
     let details = {
         linkin_link: 'http://linkedin.com/in/pasupathi07777',
         gamil_link:"mailto:pasupathi07777@gamil.com",
+        git_link:"https://github.com/pasupathi07777?tab=repositories",
         name: "Pasupathi",
         my_domine: "Im a Frontend Developer",
         linkdin_logo: <FaLinkedin size={40} />,
         gamil_logo: <SiGmail size={40} />,
+        git_logo:<FaGithub size={40} />,
         image: Heroimg
 
     }

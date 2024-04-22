@@ -17,9 +17,10 @@ const Hero = () => {
 
 
                     <div className='flex gap-4 py-3  '>
-                        <a target='_blank' href={details.linkin_link} rel="noreferrer" className='hover:text-white'>{details.linkdin_logo}</a>
+                        <a target='_blank' href={details.linkin_link} rel="linkedin" className='hover:text-white'>{details.linkdin_logo}</a>
                        
                         <a target='_blank' href={details.gamil_link} rel="noreferrer" className='hover:text-white'>{details.gamil_logo}</a>
+                        <a target='_blank' href={details.git_link} rel="noreferrer" className='hover:text-white'>{details.git_logo} </a>
 
                     </div>
                 </div>
