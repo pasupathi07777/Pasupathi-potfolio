@@ -65,10 +65,12 @@ return (
       <div className='flex flex-col justify-center text-white text-center'>
         <h1 className='w-[150px] text-4xl text-white border-b-4 mx-auto  border-bg-color-2  font-bold   mb-4'>{resume.title}</h1>
         <p className='flex -flex-col sm:flex-row gap-5'>
-          <button onClick={openPdfInNewTab} className='btn hover:border-2 bg-color-2 rounded border-white min-w-[120px] text-center'  >{resume.View_btn}</button>&nbsp;
-          <button onClick={downloadPdf} className='btn hover:border-2 bg-color-2 rounded border-white min-w-[120px] text-center' >{resume.Downlode_btn}</button>&nbsp;
+          <button onClick={openPdfInNewTab} className='btn hover:border-2 bg-color-2 rounded border-white min-w-[120px] text-center'  >{resume.View_btn}</button>
+          <a href={fff}>view</a>
+          
 
         </p>
+        {/* <button onClick={downloadPdf} className='btn hover:border-2 bg-color-2 rounded border-white min-w-[120px] text-center' >{resume.Downlode_btn}</button> */}
       </div>
     </div>
   </section>
