@@ -21,23 +21,7 @@ const Resume = () => {
   //   document.body.removeChild(link);
   // }
 
-  const openPdfInNewTab = () => {
-    // Check if the user agent indicates an Android device
-    const isAndroid = /android/i.test(navigator.userAgent);
-  
-    if (isAndroid) {
-      // On Android, open the PDF file in a new tab
-      window.open(fff, '_blank');
-    } else {
-      // On other devices, trigger a download directly
-      const link = document.createElement('a');
-      link.href = fff;
-      // link.download = 'Resume.pdf';
-      // document.body.appendChild(link);
-      // link.click();
-      // document.body.removeChild(link);
-    }
-  };
+
   
   
 
