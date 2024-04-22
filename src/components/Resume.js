@@ -21,16 +21,23 @@ const Resume = () => {
   // }
 
   const openPdfInNewTab = () => {
-    // Create a link element
-    const link = document.createElement('a');
-    link.href = fff;
+    // Check if the user agent indicates an Android device
+    const isAndroid = /android/i.test(navigator.userAgent);
   
-    // Set target to _blank to open in a new tab
-    link.target = '_blank';
-  
-    // Trigger a click event on the link
-    link.click();
+    if (isAndroid) {
+      // On Android, open the PDF file in a new tab
+      window.open(fff, '_blank');
+    } else {
+      // On other devices, trigger a download directly
+      const link = document.createElement('a');
+      link.href = fff;
+      // link.download = 'Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
+  
   
 
 

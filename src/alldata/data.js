@@ -119,7 +119,7 @@ export let Dataprovider = ({ children }) => {
     let resume = {
         title: "Resume",
         img: Resume,
-        View_btn: "Views CV",
+        View_btn: "View CV",
         Downlode_btn: "Downlode CV",
         pdf: Pasupathi_Resume
     }
