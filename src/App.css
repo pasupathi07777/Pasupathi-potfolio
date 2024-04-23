@@ -77,7 +77,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 header ul li{
-  @apply px-2;
+  @apply px-2 hover:border-teal-100;
 }
 .bg-color{
  

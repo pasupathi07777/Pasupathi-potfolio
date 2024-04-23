@@ -8,14 +8,14 @@ const Header = () => {
     let [togglemenu, settogglemenu] = useState(false)
     return (
         <header className='flex justify-between px-5 py-1 bg-color-2 fixed top-0 left-0 z-10 w-full'>
-            <p className='font-bold text-black' >Pasupathi.S</p>
+            <p className='font-bold text-black hover:text-white' >Pasupathi.S</p>
             <nav className='hidden sm:block'>
                 <ul className=' flex text-white '>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="/#About">About</a></li>
-                    <li><a href="/#Project">Project</a></li>
-                    <li><a href="/#Resume">Resume</a></li>
-                    <li><a href="/#Contact">Contact</a></li>
+                    <li className=' hover:bg-[#2b2d77] h-full rounded'><a href="#hero">Home</a></li>
+                    <li className=' hover:bg-[#2b2d77] h-full rounded'><a href="/#About">About</a></li>
+                    <li className=' hover:bg-[#2b2d77] h-full rounded'><a href="/#Project">Project</a></li>
+                    <li className=' hover:bg-[#2b2d77] h-full rounded'><a href="/#Resume">Resume</a></li>
+                    <li className=' hover:bg-[#2b2d77] h-full rounded' ><a  href="/#Contact">Contact</a></li>
 
                 </ul>
             </nav>
