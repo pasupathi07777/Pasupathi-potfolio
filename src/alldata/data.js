@@ -43,6 +43,11 @@ import miniproject4 from '../img/project-2/testimonialslider.png'
 import miniproject5 from '../img/project-2/productfilter.png'
 import miniproject6 from '../img/project-2/menucart.png'
 import miniproject7 from '../img/project-2/todolist.png'
+import miniproject8 from '../img/project-2/lode-products.png'
+import miniproject9 from '../img/project-2/qr-code-generator.png'
+import miniproject10 from '../img/project-2/random-color-generator.png'
+import miniproject11 from '../img/project-2/single-multi-selector.png'
+
 
 
 // games project
@@ -153,9 +158,9 @@ export let Dataprovider = ({ children }) => {
         details: 
         [
 
-        { name:"Restarent website", img: projectimg1, link: "https://food-in-res.netlify.app/" },
-        { name:"SV-Media application ", img: projectimg2, link: "https://pasupathi-socialmedia.netlify.app/" },
-        { name:"Shoping Website", img: projectimg3, link: "https://nostra-ecomer.netlify.app/" },
+        { name:"Restarent website", img: projectimg1, link: "https://pasupathi07777-foodin.netlify.app/" },
+        { name:"SV-Media application ", img: projectimg2, link: "https://pasupathi07777-svmedia.netlify.app/" },
+        { name:"Shoping Website", img: projectimg3, link: "https://pasupathi-nostra.netlify.app/" },
 
 
         ]
@@ -165,13 +170,19 @@ export let Dataprovider = ({ children }) => {
     // mini project
     let miniproject = {
         details: [
-        { name:"Star Rating", img: miniproject1, link: "https://javascript-starrating.netlify.app/" },
-        { name:"Product Slider", img: miniproject2, link: "https://product-slider-javascript.netlify.app/" },
+        { name:"Star Rating", img: miniproject1, link: "https://pasupathi-star-rating.netlify.app/" },
+        { name:"Product Slider", img: miniproject2, link: "https://pasupathi-product-slider.netlify.app/" },
         { name:"Pop-Pup-image-galary", img: miniproject3, link: "https://pop-pup-image-galary.netlify.app/" },
-        { name:"Testimonial Slider", img: miniproject4, link: "https://testimonial-slider-javascript.netlify.app/"},
-        { name:"Product Filter", img: miniproject5, link: "https://product-filter-javascript.netlify.app/"},
-        { name:"Menu-Cart", img: miniproject6, link: "https://javascript-product-menu.netlify.app/"},
-        { name:"Todolist", img: miniproject7, link: "https://todolist-pasupathi.netlify.app/"},
+        { name:"Testimonial Slider", img: miniproject4, link: "https://pasupathi-testimonial-slider.netlify.app/"},
+        { name:"Product Filter", img: miniproject5, link: "https://pasupathi-product-filter.netlify.app/"},
+        { name:"Menu-Cart", img: miniproject6, link: "https://pasupathi-food-menu.netlify.app/"},
+        { name:"Todolist", img: miniproject7, link: "https://pasupathi-to-do-lists.netlify.app/"},
+        { name:"lode-more-products", img: miniproject8, link: "https://pasupathi-lode-more-products.netlify.app/"},
+        { name:"QR-code-generator", img: miniproject9, link: "https://pasupathi-qr-code-generator.netlify.app/"},
+        { name:"random-color-generator", img: miniproject10, link: "https://pasupathi-random-color-generator.netlify.app/"},
+        { name:"single-multi-selector", img: miniproject11, link: "https://pasupathi-single-multi-selector.netlify.app/"},
+
+
 
 
         ]
@@ -180,7 +191,7 @@ export let Dataprovider = ({ children }) => {
     //    games project
     let gamesproject = {
         details: [
-        { name:"Tic-Tak-Toe", img: gamesproject1, link: "https://tictact-game.netlify.app/" },
+        { name:"Tic-Tak-Toe", img: gamesproject1, link: "https://pasupathi-tic-tac-toe.netlify.app/" },
       
 
 
