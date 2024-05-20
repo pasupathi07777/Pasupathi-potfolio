@@ -47,6 +47,7 @@ import miniproject8 from '../img/project-2/lode-products.png'
 import miniproject9 from '../img/project-2/qr-code-generator.png'
 import miniproject10 from '../img/project-2/random-color-generator.png'
 import miniproject11 from '../img/project-2/single-multi-selector.png'
+import miniproject12 from '../img/project-2/image-slider.png'
 
 
 
@@ -181,6 +182,7 @@ export let Dataprovider = ({ children }) => {
         { name:"QR-code-generator", img: miniproject9, link: "https://pasupathi-qr-code-generator.netlify.app/"},
         { name:"random-color-generator", img: miniproject10, link: "https://pasupathi-random-color-generator.netlify.app/"},
         { name:"single-multi-selector", img: miniproject11, link: "https://pasupathi-single-multi-selector.netlify.app/"},
+        { name:"image-slider", img: miniproject12, link: "https://pasupathi-image-slider.netlify.app/"},
 
 
 
