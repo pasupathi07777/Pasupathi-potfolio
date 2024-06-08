@@ -18,25 +18,28 @@ html{
   background-color: #2b2d77;
   
 }
-/* Styling scrollbar */
-html::-webkit-scrollbar {
-  width: 4px; /* Width of the scrollbar */
+
+
+
+/* html::-webkit-scrollbar {
+  width: 4px; 
 }
 
-/* Track */
+
 html::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Color of the track */
+  background: #f1f1f1;
 }
 
-/* Handle */
+
 html::-webkit-scrollbar-thumb {
-  background: #888; /* Color of the handle */
+  background: #888; 
 }
 
-/* Handle on hover */
+
 html::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color of the handle on hover */
-}
+  background: #555; 
+} */
+
 
 
 

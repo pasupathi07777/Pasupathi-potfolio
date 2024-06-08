@@ -29,6 +29,10 @@ import Pasupathi_Resume from '../img/Resume.pdf'
 import projectimg1 from '../img/project-1/restarent.png'
 import projectimg2 from '../img/project-1/svmedia.png'
 import projectimg3 from '../img/project-1/nostra.png'
+import projectimg4 from '../img/project-1/udamy-clone.png'
+import projectimg5 from '../img/project-1/tripadvicer-clone.png'
+import projectimg6 from '../img/project-1/greeden.png'
+
 
 
 
@@ -48,6 +52,7 @@ import miniproject9 from '../img/project-2/qr-code-generator.png'
 import miniproject10 from '../img/project-2/random-color-generator.png'
 import miniproject11 from '../img/project-2/single-multi-selector.png'
 import miniproject12 from '../img/project-2/image-slider.png'
+import miniproject13 from '../img/project-2/gessing-game.png'
 
 
 
@@ -139,7 +144,7 @@ export let Dataprovider = ({ children }) => {
     let contact = {
         title: "Contact",
         para_1: "If you want to discuss more about details,please contact me",
-        gamil: 'pasupathi0757@gamil.com',
+        gamil: 'pasupathi0757@gmail.com',
         mob_number: "6374425185"
 
 
@@ -162,6 +167,9 @@ export let Dataprovider = ({ children }) => {
         { name:"Restarent website", img: projectimg1, link: "https://pasupathi07777-foodin.netlify.app/" },
         { name:"SV-Media application ", img: projectimg2, link: "https://pasupathi07777-svmedia.netlify.app/" },
         { name:"Shoping Website", img: projectimg3, link: "https://pasupathi-nostra.netlify.app/" },
+        { name:"Udamy-clone", img: projectimg4, link: "https://pasupathi07777.github.io/udamy-clone/" },
+        { name:"Tripadvicer-clone", img: projectimg5, link: "https://pasupathi07777.github.io/TripAdvicer-Clone/" },
+        { name:"Greeden Website", img: projectimg6, link: "https://pasupathi07777.github.io/Greenden/index.html" },
 
 
         ]
@@ -180,9 +188,10 @@ export let Dataprovider = ({ children }) => {
         { name:"Todolist", img: miniproject7, link: "https://pasupathi-to-do-lists.netlify.app/"},
         { name:"lode-more-products", img: miniproject8, link: "https://pasupathi-lode-more-products.netlify.app/"},
         { name:"QR-code-generator", img: miniproject9, link: "https://pasupathi-qr-code-generator.netlify.app/"},
-        { name:"random-color-generator", img: miniproject10, link: "https://pasupathi-random-color-generator.netlify.app/"},
+        { name:"color-generator", img: miniproject10, link: "https://pasupathi-random-color-generator.netlify.app/"},
         { name:"single-multi-selector", img: miniproject11, link: "https://pasupathi-single-multi-selector.netlify.app/"},
         { name:"image-slider", img: miniproject12, link: "https://pasupathi-image-slider.netlify.app/"},
+        { name:"Guessing-Game", img: miniproject13, link: "https://pasupathi07777.github.io/Simple-Guess-Game-Js/"},
 
 
 
@@ -194,9 +203,7 @@ export let Dataprovider = ({ children }) => {
     let gamesproject = {
         details: [
         { name:"Tic-Tak-Toe", img: gamesproject1, link: "https://pasupathi-tic-tac-toe.netlify.app/" },
-      
-
-
+    
         ]
     }
 
