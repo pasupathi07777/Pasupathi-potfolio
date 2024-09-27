@@ -15,12 +15,12 @@ const Header = () => {
 
 
         <nav className="hidden sm:block z-50">
-          <ul className="flex text-white">
-            <li className="hover:bg-[#2b2d77] h-full rounded"><a href="#home">Home</a></li>
-            <li className="hover:bg-[#2b2d77] h-full rounded"><a href="#about">About</a></li>
-            <li className="hover:bg-[#2b2d77] h-full rounded"><a href="#project">Project</a></li>
-            <li className="hover:bg-[#2b2d77] h-full rounded"><a href="#resume">Resume</a></li>
-            <li className="hover:bg-[#2b2d77] h-full rounded"><a href="#contact">Contact</a></li>
+          <ul className="flex text-white gap-2">
+            <li className=" h-full rounded px-1 hover:text-[#F97316] "><a href="#home">Home</a></li>
+            <li className=" h-full rounded px-1 hover:text-[#F97316] "><a href="#about">About</a></li>
+            <li className=" h-full rounded px-1 hover:text-[#F97316] "><a href="#project">Project</a></li>
+            <li className=" h-full rounded px-1 hover:text-[#F97316] "><a href="#resume">Resume</a></li>
+            <li className=" h-full rounded px-1 hover:text-[#F97316] "><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 

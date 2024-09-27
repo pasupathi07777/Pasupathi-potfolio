@@ -4,7 +4,7 @@ import fff from '../img/Resume.pdf';
 import Title from './title/Title';
 import { FaDownload } from 'react-icons/fa';
 const Resume = () => {
-  let { resume, about } = useContext(database);
+  let {  about } = useContext(database);
 
   return (
     <section id='resume' className='flex flex-col min-h-screen bg-[rgb(33,37,41)] w-full'>

@@ -42,9 +42,9 @@ const Hero = () => {
             {/* Down arrow for scrolling */}
             {/* Down arrow for scrolling */}
             <div className="absolute  bottom-8 w-full flex justify-center h-[50px]" onClick={scrollToAbout}>
-                <a className="text-white text-3xl down-arrow cursor-pointer">
+                <p className="text-white text-3xl down-arrow cursor-pointer">
                     {icons.down}
-                </a>
+                </p>
             </div>
 
 
