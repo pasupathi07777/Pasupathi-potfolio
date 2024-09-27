@@ -81,34 +81,55 @@ export let Dataprovider = ({ children }) => {
 
     let details = {
         linkin_link: 'http://linkedin.com/in/pasupathi07777',
-        gamil_link:"mailto:pasupathi0757@gamil.com",
-        git_link:"https://github.com/pasupathi07777?tab=repositories",
+        gamil_link: "mailto:pasupathi0757@gamil.com",
+        git_link: "https://github.com/pasupathi07777?tab=repositories",
         name: "Pasupathi",
-        my_domine: "Im a Frontend Developer",
+        my_domine: "Im a Full Stack Developer.",
         linkdin_logo: <FaLinkedin size={40} />,
         gamil_logo: <SiGmail size={40} />,
-        git_logo:<FaGithub size={40} />,
+        git_logo: <FaGithub size={40} />,
         image: Heroimg
 
     }
 
 
-  
+
     let about = {
         image: Aboutimg,
+        name: "Pasupathi",
+        age: 22,
+        gmail: "pasupathi0757@gmail.com",
+        from: "nagercoil",
         title: "About Me",
-        para_1: "Hi, my name is Pasupathi. I am a Frontend Developer. I build beautiful websites using React.",
+        para_1: "Hi, my name is Pasupathi. Im a MERN Full Stack Developer.",
         para_2: "I am proficient in frontend skills like:",
-        skills: "HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React, Python",
+        skills: "HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React , Node.js , Express.js , MongoDB , Python",
         title_2: "Education",
         college_1: "NMS Kamaraj College of Education",
         college_1_year: "2017-2020",
         college_1_degree: "Diploma in Mechanical Engineering",
         college_2: "Satyam College of Engineering and Technology",
-        college_2_year: "2023-2025",
-        college_2_degree: "Bachelor of Engineering (BE)"
+        college_2_year: "2023-2026",
+        college_2_degree: "Bachelor of Engineering (BE)",
+        // experirnce:{
+        //     jobType:"intern",
+        //     company:"Error Makes Clever",
+        //     duration: "aug 2024 - setember 2024",
+        //     domine:"Im a MERN Full Stack Developer"
+
+
+        // },
+        experience: [
+            {
+                jobType: "Intern",
+                company: "Error Makes Clever",
+                duration: "August 2024 - September 2024",
+                description: "Completed a one-month internship as a MERN Full Stack Developer, gaining hands-on experience in developing full stack applications using MongoDB, Express.js, React, and Node.js.",
+            },
+
+        ],
     };
-    
+
 
 
     // project
@@ -128,7 +149,7 @@ export let Dataprovider = ({ children }) => {
 
     // resume
 
-    
+
     let resume = {
         title: "Resume",
         img: Resume,
@@ -136,7 +157,7 @@ export let Dataprovider = ({ children }) => {
         Downlode_btn: "Download CV",
         pdf: Pasupathi_Resume
     };
-    
+
 
     // contact
 
@@ -161,37 +182,37 @@ export let Dataprovider = ({ children }) => {
 
     // advance project
     let advancrproject = {
-        details: 
-        [
+        details:
+            [
 
-        { name:"Restarent website", img: projectimg1, link: "https://pasupathi07777-foodin.netlify.app/" },
-        { name:"SV-Media application ", img: projectimg2, link: "https://pasupathi07777-svmedia.netlify.app/" },
-        { name:"Shoping Website", img: projectimg3, link: "https://pasupathi-nostra.netlify.app/" },
-        { name:"Udamy-clone", img: projectimg4, link: "https://pasupathi07777.github.io/udamy-clone/" },
-        { name:"Tripadvicer-clone", img: projectimg5, link: "https://pasupathi07777.github.io/TripAdvicer-Clone/" },
-        { name:"Greeden Website", img: projectimg6, link: "https://pasupathi07777.github.io/Greenden/index.html" },
+                { name: "Restarent website", img: projectimg1, link: "https://pasupathi07777-foodin.netlify.app/" },
+                { name: "SV-Media application ", img: projectimg2, link: "https://pasupathi07777-svmedia.netlify.app/" },
+                { name: "Shoping Website", img: projectimg3, link: "https://pasupathi-nostra.netlify.app/" },
+                { name: "Udamy-clone", img: projectimg4, link: "https://pasupathi07777.github.io/udamy-clone/" },
+                { name: "Tripadvicer-clone", img: projectimg5, link: "https://pasupathi07777.github.io/TripAdvicer-Clone/" },
+                { name: "Greeden Website", img: projectimg6, link: "https://pasupathi07777.github.io/Greenden/index.html" },
 
 
-        ]
+            ]
     }
 
 
     // mini project
     let miniproject = {
         details: [
-        { name:"Star Rating", img: miniproject1, link: "https://pasupathi-star-rating.netlify.app/" },
-        { name:"Product Slider", img: miniproject2, link: "https://pasupathi-product-slider.netlify.app/" },
-        { name:"Pop-Pup-image-galary", img: miniproject3, link: "https://pop-pup-image-galary.netlify.app/" },
-        { name:"Testimonial Slider", img: miniproject4, link: "https://pasupathi-testimonial-slider.netlify.app/"},
-        { name:"Product Filter", img: miniproject5, link: "https://pasupathi-product-filter.netlify.app/"},
-        { name:"Menu-Cart", img: miniproject6, link: "https://pasupathi-food-menu.netlify.app/"},
-        { name:"Todolist", img: miniproject7, link: "https://pasupathi-to-do-lists.netlify.app/"},
-        { name:"lode-more-products", img: miniproject8, link: "https://pasupathi-lode-more-products.netlify.app/"},
-        { name:"QR-code-generator", img: miniproject9, link: "https://pasupathi-qr-code-generator.netlify.app/"},
-        { name:"color-generator", img: miniproject10, link: "https://pasupathi-random-color-generator.netlify.app/"},
-        { name:"single-multi-selector", img: miniproject11, link: "https://pasupathi-single-multi-selector.netlify.app/"},
-        { name:"image-slider", img: miniproject12, link: "https://pasupathi-image-slider.netlify.app/"},
-        { name:"Guessing-Game", img: miniproject13, link: "https://pasupathi07777.github.io/Simple-Guess-Game-Js/"},
+            { name: "Star Rating", img: miniproject1, link: "https://pasupathi-star-rating.netlify.app/" },
+            { name: "Product Slider", img: miniproject2, link: "https://pasupathi-product-slider.netlify.app/" },
+            { name: "Pop-Pup-image-galary", img: miniproject3, link: "https://pop-pup-image-galary.netlify.app/" },
+            { name: "Testimonial Slider", img: miniproject4, link: "https://pasupathi-testimonial-slider.netlify.app/" },
+            { name: "Product Filter", img: miniproject5, link: "https://pasupathi-product-filter.netlify.app/" },
+            { name: "Menu-Cart", img: miniproject6, link: "https://pasupathi-food-menu.netlify.app/" },
+            { name: "Todolist", img: miniproject7, link: "https://pasupathi-to-do-lists.netlify.app/" },
+            { name: "lode-more-products", img: miniproject8, link: "https://pasupathi-lode-more-products.netlify.app/" },
+            { name: "QR-code-generator", img: miniproject9, link: "https://pasupathi-qr-code-generator.netlify.app/" },
+            { name: "color-generator", img: miniproject10, link: "https://pasupathi-random-color-generator.netlify.app/" },
+            { name: "single-multi-selector", img: miniproject11, link: "https://pasupathi-single-multi-selector.netlify.app/" },
+            { name: "image-slider", img: miniproject12, link: "https://pasupathi-image-slider.netlify.app/" },
+            { name: "Guessing-Game", img: miniproject13, link: "https://pasupathi07777.github.io/Simple-Guess-Game-Js/" },
 
 
 
@@ -202,10 +223,23 @@ export let Dataprovider = ({ children }) => {
     //    games project
     let gamesproject = {
         details: [
-        { name:"Tic-Tak-Toe", img: gamesproject1, link: "https://pasupathi-tic-tac-toe.netlify.app/" },
-    
+            { name: "Tic-Tak-Toe", img: gamesproject1, link: "https://pasupathi-tic-tac-toe.netlify.app/" },
+
         ]
     }
+
+    const scrollToAbout = () => {
+        console.log("Scrolling to About section:", )
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+          console.log("Scrolling to About section:", aboutSection); // Debugging log
+          aboutSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.log("About section not found");
+        }
+      };
+      
+    
 
 
 
@@ -213,7 +247,7 @@ export let Dataprovider = ({ children }) => {
 
     return (
         <database.Provider value={{
-            details, about, project, resume, contact, footer, advancrproject, miniproject, gamesproject
+            details, about, project, resume, contact, footer, advancrproject, miniproject, gamesproject, scrollToAbout
 
         }}>
             {children}

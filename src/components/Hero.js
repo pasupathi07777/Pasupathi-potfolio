@@ -1,42 +1,58 @@
-import React from 'react'
+
+
+
+
+import React from 'react';
 import { useContext } from 'react';
 import database from '../alldata/data';
+import code from '../img/code.webp';
+import icons from '../data/allIicons';
 
 const Hero = () => {
-    let { details } = useContext(database)
+    let { details, scrollToAbout } = useContext(database);
+
 
 
     return (
-        <section className='flex  flex-col sm:flex-row px-5 py-10 bg-color-2 justify-center  align-middle gap-5 sm:gap-0 mt-[32px] '>
+        <div id="home"
+            className="relative w-full h-screen bg-cover bg-center"
+            style={{
+                backgroundImage: `url(${code})`,
+            }}
+        >
+            {/* Black overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-            <div id='hero' className='sm:w-1/2 flex flex-col   justify-center align-middle'>
-                <div className='flex flex-col justify-center overflow-hidden'>
-                    <h1 className=' text-white text-6xl  '>Hi, <br /> Im <span className='text-black  font-hero-font'>{details.name} </span></h1>
-                   <div className=' overflow-hidden w-fit'>
-                   <p className='slider pe-2 text-2xl mt-2 font-semibold text-white'>{details.my_domine}</p>
-                   </div>
-                  
+            {/* Main content */}
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+                <h1 className="text-4xl md:text-3xlxl font-bold">Welcome</h1>
 
-
-                    <div className='flex gap-4 py-2  '>
-                        <a target='_blank' href={details.linkin_link} rel="noreferrer" className='hover:text-white'>{details.linkdin_logo}</a>
-                       
-                        <a target='_blank' href={details.gamil_link} rel="noreferrer" className='hover:text-white'>{details.gamil_logo}</a>
-                        <a target='_blank' href={details.git_link} rel="noreferrer" className='hover:text-white'>{details.git_logo} </a>
-
-                    </div>
+                <div className="overflow-hidden w-fit flex items-center font-semibold text-white text-2xl">
+                    <p className="slider pe-2 font-semibold text-white text-2xl md:text-6xl mt-4 animate-slide">
+                        {details.my_domine}
+                    </p>
                 </div>
+                <p className="text-lg md:text-2xl mt-4">based in Nagercoil, Tamil Nadu, India.</p>
 
+                <button className="mt-6 px-8 py-3 text-lg md:text-xl border-2 border-orange-400 text-orange-400 rounded-full hover:bg-orange-400 hover:text-black transition duration-300">
+                    Hire Me
+                </button>
+            </div>
 
+            {/* Down arrow for scrolling */}
+            {/* Down arrow for scrolling */}
+            <div className="absolute  bottom-8 w-full flex justify-center h-[50px]" onClick={scrollToAbout}>
+                <a className="text-white text-3xl down-arrow cursor-pointer">
+                    {icons.down}
+                </a>
             </div>
 
 
-            <img className=' w-[300px] sm:w-auto rounded max-w-[400px] min-w-[150px] sm:min-w-[300px] max-h-[300px] mx-auto sm:mx-0' src={details.image} alt="" sizes="" srcset="" />
-        </section>
-    )
-}
-
-export default Hero
 
 
+        </div>
+    );
+};
+
+export default Hero;
 

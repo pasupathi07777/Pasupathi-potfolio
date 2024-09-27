@@ -1,108 +1,82 @@
-
-
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
 
-*{
+* {
   margin: 0;
   padding: 0;
+
+
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   user-select: none;
-  
+
 }
-html{
+
+html {
   scroll-behavior: smooth;
-  background-color: #2b2d77;
-  
+  /* background-color: #2b2d77; */  
+
 }
 
 
 
-/* html::-webkit-scrollbar {
-  width: 4px; 
-}
-
-
-html::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-
-html::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-
-
-html::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-} */
 
 
 
 
 
 
-#root{
+
+#root {
   width: 100%;
-  height:100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-grow: 1;
   overflow-y: auto;
-  
- 
-  
- 
-  
- 
- 
+
+
+
+
+
+
+
 
 }
-.App{
+
+.App {
 
   width: 100vw;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  
- 
-  
- 
-  
 
 
- 
 
- 
-}
 
-header ul li{
-  @apply px-2 hover:border-teal-100;
-}
-.bg-color{
- 
-  background-color: #2b2d77;
-}
-.bg-color-2{
-  background: rgb(85, 81, 227);
-  
-}
-.mobile-view-nav{
-  @apply fixed top-8 left-0 w-full h-1/5  bg-gray-800 ;
-  ;
+
+
+
+
+
 
 }
-.mobile-view-nav li{
-  @apply  border-b-2 w-full h-full flex align-middle justify-center m-0 ;
-}
-.about img {
-  max-width: 400px;
-}
-.btn{
-  padding: 2px 4px ;
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+  padding: 2px 4px;
   font-weight: 500;
 }
 
@@ -115,16 +89,21 @@ header ul li{
 }
 
 .pdf-wrapper {
-  width: 100%; /* Adjust width as needed */
-  max-width: 800px; /* Max width of the PDF */
-  margin: 0 auto; /* Center the PDF horizontally */
+  width: 100%;
+  /* Adjust width as needed */
+  max-width: 800px;
+  /* Max width of the PDF */
+  margin: 0 auto;
+  /* Center the PDF horizontally */
 }
 
 /* Styles for the individual pages */
 .react-pdf__Page {
   display: block;
-  margin: 0 auto; /* Center the page horizontally */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  margin: 0 auto;
+  /* Center the page horizontally */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  /* Add shadow for better visibility */
 }
 
 .react-pdf__Page__textContent {
@@ -138,6 +117,7 @@ header ul li{
   transform-origin: 0% 0%;
   cursor: text;
 }
+
 .react-pdf__Page__annotations.annotationLayer {
   position: absolute;
   left: 0;
@@ -145,28 +125,47 @@ header ul li{
   width: 100%;
   height: 100%;
 }
-@keyframes slideRightToLeft {
+
+@keyframes slider {
   0% {
-      transform: translateX(100%);
-      
+    transform: translateX(100%);
   }
   50% {
-      transform: translateX(0%);
-    
+    transform: translateX(0);
   }
-  100%{
+  100% {
     transform: translateX(100%);
+  }
+}
+
+
+@keyframes updown {
+  0% {
+    transform: translatey(100%);
+
+    display: none;
+  }
+
+  50% {
+    transform: translatey(0%);
+    display: none;
+
+  }
+
+  100% {
+    transform: translatey(100%);
+    display: block;
 
   }
 }
 
 .slider {
-  /* background-color: red; */
   width: 100%;
 
-  
-  animation: slideRightToLeft 5s  ease-in-out infinite;
+
+  animation: slider 6s ease-in-out infinite;
 }
 
-
-
+.down-arrow {
+  animation: updown 2s ease infinite;
+}

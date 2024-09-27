@@ -8,30 +8,45 @@ import Gamesproject from './components/Gamesproject'
 import Resumeimg from './components/Resumeimg';
 import { Dataprovider } from './alldata/data';
 
+
+
+
+
 function App() {
   return (
-    <div className="App">
+    <div className="App w-[100vw] h-[100vh] flex flex-col lg:flex-row     ">
       <Dataprovider>
-      <Routes>
-        <Route index element={<Allpage/>}/>
-        <Route path='/Advanceproject' element={<Advanceproject/>} />
-        <Route path='/Miniproject' element={<Miniproject/>} />
-        <Route path='/Gamesproject' element={<Gamesproject/>} />
-        <Route path='/resume' element={<Resumeimg/>} />
 
-      </Routes>
+     
+
+        <Routes>
+
+          <Route index element={<Allpage />} />
+          <Route path='/Advanceproject' element={<Advanceproject />} />
+          <Route path='/Miniproject' element={<Miniproject />} />
+          <Route path='/Gamesproject' element={<Gamesproject />} />
+          <Route path='/resume' element={<Resumeimg />} />
+
+        </Routes>
+
+
+
+
+
+
 
       </Dataprovider>
-    
-      
-      
-      
+
+
+
+
 
     </div>
   );
 }
 
 export default App;
+
 
 
 

@@ -1,63 +1,57 @@
+import React, { useContext } from 'react';
+import database from '../alldata/data';
+import Title from './title/Title';
 
-  
-  
-  
-  
-  
-  import React, { useContext } from 'react'
-  import database from '../alldata/data'
-  
-  
-  const About = () => {
-    let { about } = useContext(database)
+const About = () => {
+    let { about } = useContext(database);
+
     return (
-      <section id='About' className='about flex flex-col sm:flex-row bg-color px-5 py-10 justify-center gap-5 sm:gap-0 ' >
-  
-        <div className='w-full flex justify-center object-cover sm:px-5'>
-          <img className='  w-[300px]  rounded sm:max-w-[300px] min-w-[300px] h-[300px] ' src={about.image} alt="f" />
-        </div>
-        <div className=' w-full  flex justify-center h-full '>
-          <div className='flex flex-col justify-center text-white w-full h-full'>
-            <div className='flex flex-col justify-center w-full h-full '>
-              {/* <h1 className='text-4xl text-white border-b-4 w-[170px] border-bg-color-2  font-bold   mb-4' >{about.title}</h1> */}
-              <p className='pb-3 w-full'>{about.para_1} </p>
-              <p className=' w-full ' >{about.para_2} <p className='pb-3 w-full font-bold   '>{`${about.skills} more ...`}</p></p>
-              
-              
-              
-             
-             
+        <section
+            id="about" className="flex items-center ustify-center bg-[rgb(33,37,41)] flex-col w-full min-h-screen"
+        >
+            <div className="title w-full ">
+                <Title titleOne={" ABOUT ME"} titleTwo={"     Know Me More"}  bg={"#212529"}/>
             </div>
-            <div className='education w-full h-full flex flex-col gap-2  '>
-            <h1 className='font-semibold text-2xl '>{about.title_2}</h1>
-                <div className="box-1 w-full">
-                  <div className="college_name">
-                  {about.college_1}, <span className='degre font-bold'>{about.college_1_degre}</span>
-                
-  
-                  </div>
-                  <div className="years font-semibold">
-                    {about.college_1_year}
-  
-                  </div>
+            <section className="text-white px-8 md:p-16 flex flex-col md:flex-row gap-5 items-start">
+                {/* Left Section */}
+                <div className="flex-1">
+                    <h2 className="text-2xl md:text-4xl font-bold mb-4">
+                        I'm <span className="text-orange-500">{about.name}</span>, a MERN Full Stack Developer
+                    </h2>
+                    <p className="text-gray-400 mb-4 leading-relaxed">
+                        {about.para_1}
+                    </p>
+                    <p className="text-gray-400 leading-relaxed">
+                        {about.para_2}
+                    </p>
+                    <p className="text-gray-400 leading-relaxed">
+                        {about.skills}
+                    </p>
                 </div>
-                <div className="box-2 w-full">
-                <div className="college_name">
-                  
-                  {about.college_2}, <span  className='degre font-bold'>{about.college_2_degre}</span>
-  
-                  </div>
-                  <div className="year font-semibold">
-                    {about.college_2_year}
-  
-                  </div>
-  
+
+                {/* Right Section */}
+                <div className="p-6 rounded-lg w-full md:w-1/3">
+                    <div className="mb-4 space-y-2">
+                        <p className="text-sm font-semibold text-gray-300">
+                            Name: <span className="font-normal">{about.name}</span>
+                        </p>
+                        <p className="text-sm font-semibold text-gray-300">
+                            Email: <span className="font-normal text-orange-500">{about.gmail}</span>
+                        </p>
+                        <p className="text-sm font-semibold text-gray-300">
+                            Age: <span className="font-normal">{about.age}</span>
+                        </p>
+                        <p className="text-sm font-semibold text-gray-300">
+                            From: <span className="font-normal">{about.from}</span>
+                        </p>
+                    </div>
+                    <button className="mt-4 w-full bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-orange-600 transition duration-300 ease-in-out">
+                        Download CV
+                    </button>
                 </div>
-              </div>
-          </div>
-        </div>
-      </section>
-    )
-  }
-  
-  export default About 
+            </section>
+        </section>
+    );
+};
+
+export default About;
