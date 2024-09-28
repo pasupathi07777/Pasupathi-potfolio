@@ -1,12 +1,13 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import profile from '../../img/header.jpg'
-// import database from '../../alldata/data';
+// import profile from '../../img/profile.jpg'
+import database from '../../alldata/data';
 const NavBar = () => {
-  // let { details } = useContext(database);
+  let { details } = useContext(database);
   return (
     <div className="flex flex-col items-center h-screen text-white py-8  ">
       {/* Profile Image */}
-      <div className="rounded-full  overflow-hidden w-40    border-[#343A40] ">
+      <div className="rounded-full  overflow-hidden w-40    border-[#343A40] border-4 ">
         <img
           src={profile} // replace with actual image URL
           alt="profile"
@@ -41,18 +42,18 @@ const NavBar = () => {
       </nav>
 
       {/* Social Links */}
-      {/* <div className="flex space-x-4 mt-8 w-full gap-2 ">
-        <a href={details.linkin_link} className="text-gray-400 hover:text-white w-[20px] ">
+      <div className="flex w-full gap-3 justify-center items-center mt-7">
+        <a href={details.linkin_link} className="text-gray-400 hover:text-white  ">
           {details.linkdin_logo}
         </a>
-        <a href={details.gamil_link} className="text-gray-400 hover:text-white w-[20px] ">
+        <a href={details.gamil_link} className="text-gray-400 hover:text-white  ">
           {details.gamil_logo}
         </a>
-        <a href={details.git_link} className="text-gray-400 hover:text-white w-[20px] ">
+        <a href={details.git_link} className="text-gray-400 hover:text-white  ">
           {details.git_logo}
         </a>
 
-      </div> */}
+      </div>
     </div>
   );
 };

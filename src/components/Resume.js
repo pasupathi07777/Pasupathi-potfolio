@@ -57,13 +57,13 @@ const Resume = () => {
           </div>
 
           {/* Skills Section */}
-          <div className="mt-10">
+          <div className="mt-10 ">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">Skills</h2>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md flex items-center flex-wrap">
               {about.skills.split(',').map((skill, index) => (
                 <span
                   key={index}
-                  className="inline-block bg-orange-500 text-white text-base lg:text-lg xl:text-xl font-semibold px-4 py-2 rounded-full mr-3 mb-3 transform hover:scale-105 transition-transform duration-200"
+                  className=" bg-orange-500 inline-block  text-white text-base lg:text-lg xl:text-xl font-semibold px-4 py-2 rounded-full mr-3 mb-3 transform hover:scale-105 transition-transform duration-200"
                 >
                   {skill.trim()}
                 </span>

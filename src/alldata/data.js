@@ -69,9 +69,9 @@ export let Dataprovider = ({ children }) => {
         name: "Pasupathi",
         my_domine: "I'm a Full Stack Developer.",
 
-        linkdin_logo: <FaLinkedin size={40} />,
-        gamil_logo: <SiGmail size={40} />,
-        git_logo: <FaGithub size={40} />,
+        linkdin_logo: <FaLinkedin size={30} />,
+        gamil_logo: <SiGmail size={30} />,
+        git_logo: <FaGithub size={30} />,
         image: Heroimg
 
     }
