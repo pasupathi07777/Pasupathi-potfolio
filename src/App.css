@@ -13,6 +13,7 @@
   font-family: "Poppins", sans-serif;
   user-select: none;
 
+
 }
 
 html {
@@ -22,23 +23,25 @@ html {
 }
 
 
-/* For Webkit browsers like Chrome and Safari */
+
+
+
 ::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #343A40; /* Background of the scrollbar track */
-  border-radius: 10px; /* Rounded corners for the scrollbar track */
+  background: #343A40;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FF8C00; /* Color of the scrollbar thumb */
-  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  background: #FF8C00;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FF7F00; /* Color of the scrollbar thumb on hover */
+  background: #FF7F00;
 }
 
 

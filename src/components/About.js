@@ -37,7 +37,7 @@ const About = () => {
                         <p className=" text-sm font-semibold text-gray-300">
                             Name: <span className="font-normal">{about.name}</span>
                         </p>
-                        <p className="text-sm  font-semibold text-gray-300">
+                        <p className="text-sm  font-semibold text-gray-300 lowercase">
                             Email: <span className="font-normal text-orange-500">{about.gmail}</span>
                         </p>
                         <p className="text-sm  font-semibold text-gray-300">
