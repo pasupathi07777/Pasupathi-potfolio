@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "framer-motion": "^11.9.0",
     "pdf-image-extractor": "^2.0.8",
     "pdf-poppler": "^0.2.1",
     "pdf-to-img-vercel": "^2.1.2",
@@ -20,6 +21,7 @@
     "react-pdf-to-image-light": "^1.0.6",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
+    "react-simple-typewriter": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
