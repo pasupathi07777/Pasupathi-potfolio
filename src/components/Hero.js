@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
 
 
-            <p className="  absolute bottom-8 z-40   w-full flex justify-center h-[50px] cursor-pointer" >
+            <p className="  absolute bottom-16 z-40   w-full flex justify-center h-[100px] cursor-pointer" >
                 <a href='#about' className="text-white text-3xl down-arrow  text-[330px] cursor-pointer ">
                     {icons.down}
 

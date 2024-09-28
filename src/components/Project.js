@@ -70,7 +70,7 @@ const Project = () => {
           if (index === 2) {
             // This is the "Visit My All Projects" box without an image
             return (
-              <div key={index} className="flex flex-col justify-center items-center bg-gray-800 text-white rounded-lg shadow-lg p-6">
+              <div key={index} className="flex flex-col justify-center items-center h-[200px] bg-gray-800 text-white rounded-lg shadow-lg p-6">
                 <h2 className="font-bold text-2xl mb-2">Visit My All Projects</h2>
                 <p className="text-center mb-4">
                   Click the button below to explore more projects and see my full range of work!
@@ -89,7 +89,7 @@ const Project = () => {
           return (
             <div key={index} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <img
-                className="w-full h-full min:h-[200px]  transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-[200px]  transition-transform duration-500 group-hover:scale-105"
                 src={proj.img}
                 alt={proj.title}
               />
