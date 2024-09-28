@@ -1,7 +1,8 @@
 import React from 'react';
 import { useContext } from 'react';
 import database from '../alldata/data';
-import code from '../img/code.webp';
+// import code from '../img/code.webp';
+import code from '../img/code.jpg';
 import icons from '../data/allIicons';
 
 const Hero = () => {

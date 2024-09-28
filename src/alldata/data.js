@@ -67,7 +67,8 @@ export let Dataprovider = ({ children }) => {
         gamil_link: "mailto:pasupathi0757@gamil.com",
         git_link: "https://github.com/pasupathi07777?tab=repositories",
         name: "Pasupathi",
-        my_domine: "Im a Full Stack Developer.",
+        my_domine: "I'm a Full Stack Developer.",
+
         linkdin_logo: <FaLinkedin size={40} />,
         gamil_logo: <SiGmail size={40} />,
         git_logo: <FaGithub size={40} />,
@@ -194,7 +195,7 @@ export let Dataprovider = ({ children }) => {
                 { name: "Weather App", img: projectimg7, link: "https://weather-app-react-pasupathi.netlify.app/" },
                 { name: "WalMart E-comer Website ", img: projectimg8, link: "https://wallmart-fsd-frontend.onrender.com/" },
                 { name: "Udemy-clone ", img: projectimg9, link: "https://udamy-clone-react.netlify.app/" },
-               
+
 
 
             ]
@@ -222,7 +223,7 @@ export let Dataprovider = ({ children }) => {
             { name: "Perfume App", img: miniproject18, link: "https://perfumy-react-project.netlify.app/" },
         ]
     }
-    
+
     //    games project
     let gamesproject = {
         details: [
@@ -247,7 +248,7 @@ export let Dataprovider = ({ children }) => {
 
     return (
         <database.Provider value={{
-            details, about, project, resume, contact, footer, advancrproject, miniproject, gamesproject,combinedProjects
+            details, about, project, resume, contact, footer, advancrproject, miniproject, gamesproject, combinedProjects
 
         }}>
             {children}
