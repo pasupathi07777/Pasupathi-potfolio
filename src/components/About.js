@@ -47,39 +47,18 @@ const About = () => {
                             From: <span className="font-normal">{about.from}</span>
                         </p>
                     </div>
-                    {/* <div className="btn-group text-sm sm:gap-4 md:gap-0 sm:flex md:flex-col   ">
+
+
+                    <div className="btn-group text-sm sm:gap-4 md:gap-0 sm:flex md:flex-col">
                         <button className="mt-4 w-full bg-orange-500 text-white py-1 px-4 rounded-md hover:bg-orange-600 transition duration-300 ease-in-out">
-
-                            <a
-                                href={fff}
-                                download
-
-                            >
+                            <a href={fff} download>
                                 Download CV
-
                             </a>
                         </button>
-                        <button className="mt-4 w-full bg-orange-500 text-white py-1 px-4 rounded-md hover:bg-orange-600 transition duration-300 ease-in-out">
-
-
-
-
-
-                            <Link to={"resume"}> View CV</Link>
-
-
+                        <button className="mt-4 w-full flex  bg-green-500 text-white py-1 px-4 rounded-md hover:bg-green-600 transition duration-300 ease-in-out">
+                            <Link className='w-full' to={"resume"}> View CV</Link>
                         </button>
-                    </div> */}
-                    <div className="btn-group text-sm sm:gap-4 md:gap-0 sm:flex md:flex-col">
-    <button className="mt-4 w-full bg-orange-500 text-white py-1 px-4 rounded-md hover:bg-orange-600 transition duration-300 ease-in-out">
-        <a href={fff} download>
-            Download CV
-        </a>
-    </button>
-    <button className="mt-4 w-full flex  bg-green-500 text-white py-1 px-4 rounded-md hover:bg-green-600 transition duration-300 ease-in-out">
-        <Link className='w-full'  to={"resume"}> View CV</Link>
-    </button>
-</div>
+                    </div>
 
                 </div>
             </section>

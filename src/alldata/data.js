@@ -126,12 +126,12 @@ export let Dataprovider = ({ children }) => {
         para_1: "Here are some of my best projects built with React.",
         projects: [
             {
-                title: "WalMart E-comer Website ",
-                description: "A fully functional e-commerce platform built with MERN stack. Implemented functionalities including an admin panel, shopping cart, order placement, and product management",
+                title: "WalMart E-commerce Website",
+                description: "A fully functional e-commerce platform built with the MERN stack. Implemented functionalities include an admin panel, shopping cart, order placement, and product management.",
                 img: img1,
                 site: "https://wallmart-fsd-frontend.onrender.com/",
-
             },
+            
             {
                 title: "Udemy-clone ",
                 description: "Developed a fully responsive Udemy clone application using React.js and Tailwind CSS.",
