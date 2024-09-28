@@ -102,7 +102,7 @@ function Resumeimg() {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-black text-white font-serif">
+    <div className="w-full min-h-screen flex justify-center items-center bg-black text-white font-serif ">
       {pdfFile && (
         <div className="w-full max-w-500 mx-auto my-auto text-center flex justify-center ">
           <Document className='w-[500px]'  file={pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
