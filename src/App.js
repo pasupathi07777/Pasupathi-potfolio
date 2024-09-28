@@ -1,12 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-// import Allproject from './components/Allproject';
 import Allpage from './components/Allpage';
-import Advanceproject from './components/Advanceproject';
-import Miniproject from './components/Miniproject'
-import Gamesproject from './components/Gamesproject'
 import Resumeimg from './components/Resumeimg';
 import { Dataprovider } from './alldata/data';
+import AllProject from './components/project/AllProject';
 
 
 
@@ -22,10 +19,8 @@ function App() {
         <Routes>
 
           <Route index element={<Allpage />} />
-          <Route path='/Advanceproject' element={<Advanceproject />} />
-          <Route path='/Miniproject' element={<Miniproject />} />
-          <Route path='/Gamesproject' element={<Gamesproject />} />
           <Route path='/resume' element={<Resumeimg />} />
+          <Route path='/myproject' element={<AllProject />} />
 
         </Routes>
 

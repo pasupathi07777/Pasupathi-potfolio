@@ -20,7 +20,7 @@ const Contact = () => {
         <div>
           <div className="mb-8">
             <h3 className="text-xl font-bold text-white">ADDRESS</h3>
-            <p>4th Floor, Plot No.22, 145 Murphy Canyon Rd. San Diego CA 2028</p>
+            <p>Balaji illam, Near Pechiamman Kovil, Vayal Thiru, Vadalavilai, Kotter, Nagercoil-2, 629002</p>
           </div>
 
           <div className="mb-8">

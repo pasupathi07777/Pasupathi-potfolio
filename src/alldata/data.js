@@ -5,25 +5,17 @@ import { SiGmail } from "react-icons/si";
 import Heroimg from '../img/header.jpg'
 import { FaGithub } from "react-icons/fa";
 
-// about
-import Aboutimg from '../img/about2.png'
 
 
 // projext
-
-import img1 from '../img/download1.png'
-import img2 from '../img/download2.png'
-import img3 from '../img/download3.avif'
+import img1 from '../img/projectThumbnile/walmart.png'
+import img2 from '../img/projectThumbnile/udemy.png'
 
 
 // resume
-
-import Resume from '../img/resume.png'
-
 import Pasupathi_Resume from '../img/Resume.pdf'
 
-
-// advance project
+//advance project
 // img / project-1
 
 import projectimg1 from '../img/project-1/restarent.png'
@@ -32,10 +24,9 @@ import projectimg3 from '../img/project-1/nostra.png'
 import projectimg4 from '../img/project-1/udamy-clone.png'
 import projectimg5 from '../img/project-1/tripadvicer-clone.png'
 import projectimg6 from '../img/project-1/greeden.png'
-
-
-
-
+import projectimg7 from '../img/project-1/weather-api.png'
+import projectimg8 from '../img/projectThumbnile/walmart.png'
+import projectimg9 from '../img/projectThumbnile/udemy.png'
 
 // mini project
 // // img / project-2
@@ -53,23 +44,15 @@ import miniproject10 from '../img/project-2/random-color-generator.png'
 import miniproject11 from '../img/project-2/single-multi-selector.png'
 import miniproject12 from '../img/project-2/image-slider.png'
 import miniproject13 from '../img/project-2/gessing-game.png'
-
-
+import miniproject14 from '../img/project-2/randomjock.png'
+import miniproject15 from '../img/project-2/favStudent.png'
+import miniproject16 from '../img/project-2/actToDo.png'
+import miniproject17 from '../img/project-2/gogGalary.png'
+import miniproject18 from '../img/project-2/perfume.png'
 
 // games project
 // // img / project-3
-
-
 import gamesproject1 from '../img/project-3/tictactoe.png'
-
-
-
-
-
-
-
-
-
 
 
 // All data
@@ -95,7 +78,6 @@ export let Dataprovider = ({ children }) => {
 
 
     let about = {
-        image: Aboutimg,
         name: "Pasupathi",
         age: 22,
         gmail: "pasupathi0757@gmail.com",
@@ -111,14 +93,8 @@ export let Dataprovider = ({ children }) => {
         college_2: "Satyam College of Engineering and Technology",
         college_2_year: "2023-2026",
         college_2_degree: "Bachelor of Engineering (BE)",
-        // experirnce:{
-        //     jobType:"intern",
-        //     company:"Error Makes Clever",
-        //     duration: "aug 2024 - setember 2024",
-        //     domine:"Im a MERN Full Stack Developer"
+        address: "Balaji illam, Near Pechiamman Kovil, Vayal Thiru, Vadalavilai, Kotter, Nagercoil-2, 629002",
 
-
-        // },
         experience: [
             {
                 jobType: "Intern",
@@ -128,31 +104,55 @@ export let Dataprovider = ({ children }) => {
             },
 
         ],
+        certifications: [
+            {
+                provider: "Error Makes Clever Academy",
+                course: "MERN Full Stack Development",
+                duration: "May 2024 to September 2024",
+                description: "Completed an intensive MERN stack course focused on mastering HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB. Gained hands-on experience in building full-stack web applications, developing RESTful APIs, and managing version control with Git."
+            }
+        ]
+
     };
 
 
 
-    // project
+
+
 
     let project = {
-        title: "Project",
-        para_1: "These are some of my best projects i have built these with react",
-        projects_1: "Advance Project",
-        projects_2: "Mini project",
-        projects_3: "Games Project",
-        btn: "View projects",
-        project_img: [img1, img2, img3]
+        title: "Projects",
+        para_1: "Here are some of my best projects built with React.",
+        projects: [
+            {
+                title: "WalMart E-comer Website ",
+                description: "A fully functional e-commerce platform built with MERN stack. Implemented functionalities including an admin panel, shopping cart, order placement, and product management",
+                img: img1,
+                site: "https://wallmart-fsd-frontend.onrender.com/",
 
+            },
+            {
+                title: "Udemy-clone ",
+                description: "Developed a fully responsive Udemy clone application using React.js and Tailwind CSS.",
+                site: "https://udamy-clone-react.netlify.app/",
+                img: img2,
 
+            },
+            {
+                title: "visit my allprojext",
+                description: "",
 
-    }
+                link: "/allproject"
+            }
+        ]
+    };
+    // img: img3,
 
     // resume
 
 
     let resume = {
         title: "Resume",
-        img: Resume,
         View_btn: "View CV",
         Downlode_btn: "Download CV",
         pdf: Pasupathi_Resume
@@ -191,35 +191,38 @@ export let Dataprovider = ({ children }) => {
                 { name: "Udamy-clone", img: projectimg4, link: "https://pasupathi07777.github.io/udamy-clone/" },
                 { name: "Tripadvicer-clone", img: projectimg5, link: "https://pasupathi07777.github.io/TripAdvicer-Clone/" },
                 { name: "Greeden Website", img: projectimg6, link: "https://pasupathi07777.github.io/Greenden/index.html" },
+                { name: "Weather App", img: projectimg7, link: "https://weather-app-react-pasupathi.netlify.app/" },
+                { name: "WalMart E-comer Website ", img: projectimg8, link: "https://wallmart-fsd-frontend.onrender.com/" },
+                { name: "Udemy-clone ", img: projectimg9, link: "https://udamy-clone-react.netlify.app/" },
+               
 
 
             ]
     }
-
-
     // mini project
     let miniproject = {
         details: [
             { name: "Star Rating", img: miniproject1, link: "https://pasupathi-star-rating.netlify.app/" },
             { name: "Product Slider", img: miniproject2, link: "https://pasupathi-product-slider.netlify.app/" },
-            { name: "Pop-Pup-image-galary", img: miniproject3, link: "https://pop-pup-image-galary.netlify.app/" },
+            { name: "Pop-Up Image Gallery", img: miniproject3, link: "https://pop-pup-image-galary.netlify.app/" },
             { name: "Testimonial Slider", img: miniproject4, link: "https://pasupathi-testimonial-slider.netlify.app/" },
             { name: "Product Filter", img: miniproject5, link: "https://pasupathi-product-filter.netlify.app/" },
-            { name: "Menu-Cart", img: miniproject6, link: "https://pasupathi-food-menu.netlify.app/" },
-            { name: "Todolist", img: miniproject7, link: "https://pasupathi-to-do-lists.netlify.app/" },
-            { name: "lode-more-products", img: miniproject8, link: "https://pasupathi-lode-more-products.netlify.app/" },
-            { name: "QR-code-generator", img: miniproject9, link: "https://pasupathi-qr-code-generator.netlify.app/" },
-            { name: "color-generator", img: miniproject10, link: "https://pasupathi-random-color-generator.netlify.app/" },
-            { name: "single-multi-selector", img: miniproject11, link: "https://pasupathi-single-multi-selector.netlify.app/" },
-            { name: "image-slider", img: miniproject12, link: "https://pasupathi-image-slider.netlify.app/" },
-            { name: "Guessing-Game", img: miniproject13, link: "https://pasupathi07777.github.io/Simple-Guess-Game-Js/" },
-
-
-
-
+            { name: "Menu Cart", img: miniproject6, link: "https://pasupathi-food-menu.netlify.app/" },
+            { name: "To-Do List", img: miniproject7, link: "https://pasupathi-to-do-lists.netlify.app/" },
+            { name: "Load More Products", img: miniproject8, link: "https://pasupathi-lode-more-products.netlify.app/" },
+            { name: "QR Code Generator", img: miniproject9, link: "https://pasupathi-qr-code-generator.netlify.app/" },
+            { name: "Color Generator", img: miniproject10, link: "https://pasupathi-random-color-generator.netlify.app/" },
+            { name: "Single Multi Selector", img: miniproject11, link: "https://pasupathi-single-multi-selector.netlify.app/" },
+            { name: "Image Slider", img: miniproject12, link: "https://pasupathi-image-slider.netlify.app/" },
+            { name: "Guessing Game", img: miniproject13, link: "https://pasupathi07777.github.io/Simple-Guess-Game-Js/" },
+            { name: "Random Jokes Generator", img: miniproject14, link: "https://random-jokes-generator-react.netlify.app/" },
+            { name: "Select Favourite Student", img: miniproject15, link: "https://favourite-student-task.netlify.app/" },
+            { name: "Act To Do App", img: miniproject16, link: "https://actodo-react.netlify.app/" },
+            { name: "Gallery App", img: miniproject17, link: "https://dog-gallery-react.netlify.app/" },
+            { name: "Perfume App", img: miniproject18, link: "https://perfumy-react-project.netlify.app/" },
         ]
     }
-
+    
     //    games project
     let gamesproject = {
         details: [
@@ -228,18 +231,15 @@ export let Dataprovider = ({ children }) => {
         ]
     }
 
-    const scrollToAbout = () => {
-        console.log("Scrolling to About section:", )
-        const aboutSection = document.getElementById('about');
-        if (aboutSection) {
-          console.log("Scrolling to About section:", aboutSection); // Debugging log
-          aboutSection.scrollIntoView({ behavior: 'smooth' });
-        } else {
-          console.log("About section not found");
-        }
-      };
-      
-    
+    let combinedProjects = [
+        ...advancrproject.details,
+        ...miniproject.details,
+        ...gamesproject.details,
+    ];
+
+
+
+
 
 
 
@@ -247,7 +247,7 @@ export let Dataprovider = ({ children }) => {
 
     return (
         <database.Provider value={{
-            details, about, project, resume, contact, footer, advancrproject, miniproject, gamesproject, scrollToAbout
+            details, about, project, resume, contact, footer, advancrproject, miniproject, gamesproject,combinedProjects
 
         }}>
             {children}

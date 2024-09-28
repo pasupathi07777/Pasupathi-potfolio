@@ -8,7 +8,7 @@ const About = () => {
 
     return (
         <section
-            id="about" className="flex items-center ustify-center bg-[rgb(33,37,41)] flex-col w-full min-h-screen"
+            id="about" className="flex items-center ustify-center bg-[rgb(33,37,41)] flex-col w-full md:min-h-screen"
         >
             <div className="title w-full ">
                 <Title titleOne={" ABOUT ME"} titleTwo={"     Know Me More"} bg={"#212529"} />
@@ -64,3 +64,6 @@ const About = () => {
 };
 
 export default About;
+
+
+

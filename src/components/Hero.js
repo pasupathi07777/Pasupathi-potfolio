@@ -1,7 +1,3 @@
-
-
-
-
 import React from 'react';
 import { useContext } from 'react';
 import database from '../alldata/data';
@@ -9,7 +5,7 @@ import code from '../img/code.webp';
 import icons from '../data/allIicons';
 
 const Hero = () => {
-    let { details, scrollToAbout } = useContext(database);
+    let { details } = useContext(database);
 
 
 
@@ -21,10 +17,10 @@ const Hero = () => {
             }}
         >
             {/* Black overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div className="absolute inset-0 z-20  bg-black bg-opacity-50"></div>
 
             {/* Main content */}
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+            <div className="relative z-40 flex flex-col items-center justify-center h-full text-white">
                 <h1 className="text-4xl md:text-3xlxl font-bold">Welcome</h1>
 
                 <div className="overflow-hidden w-fit flex items-center font-semibold text-white text-2xl">
@@ -32,20 +28,22 @@ const Hero = () => {
                         {details.my_domine}
                     </p>
                 </div>
-                <p className="text-lg md:text-2xl mt-4">based in Nagercoil, Tamil Nadu, India.</p>
+                <p className="text-lg md:text-2xl mt-4">Based in Nagercoil, Tamil Nadu, India.</p>
+
 
                 <button className="mt-6 px-8 py-3 text-lg md:text-xl border-2 border-orange-400 text-orange-400 rounded-full hover:bg-orange-400 hover:text-black transition duration-300">
-                    Hire Me
+                    <a href="#contact"> Hire Me</a>
                 </button>
             </div>
 
-            {/* Down arrow for scrolling */}
-            {/* Down arrow for scrolling */}
-            <div className="absolute  bottom-8 w-full flex justify-center h-[50px]" onClick={scrollToAbout}>
-                <p className="text-white text-3xl down-arrow cursor-pointer">
+
+            <p className="  absolute bottom-8 z-40   w-full flex justify-center h-[50px] cursor-pointer" >
+                <a href='#about' className="text-white text-3xl down-arrow  text-[330px] cursor-pointer ">
                     {icons.down}
-                </p>
-            </div>
+
+
+                </a>
+            </p>
 
 
 
@@ -55,4 +53,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
 

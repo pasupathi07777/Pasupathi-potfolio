@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div className="flex flex-col items-center h-screen text-white py-8  ">
       {/* Profile Image */}
-      <div className="rounded-full  overflow-hidden w-40  ]  border-[#343A40] ">
+      <div className="rounded-full  overflow-hidden w-40    border-[#343A40] ">
         <img
           src={profile} // replace with actual image URL
           alt="profile"
@@ -21,7 +21,7 @@ const NavBar = () => {
       <nav className="mt-8">
         <ul className="space-y-4 text-center">
           <li>
-            <a href="#home" className="text-orange-500 font-semibold">Home</a>
+            <a href="#home" className="hover:text-orange-500 font-semibold">Home</a>
           </li>
           <li>
             <a href="#about" className="hover:text-orange-500">About Me</a>
