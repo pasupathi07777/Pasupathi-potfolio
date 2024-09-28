@@ -76,8 +76,8 @@ const About = () => {
             Download CV
         </a>
     </button>
-    <button className="mt-4 w-full bg-green-500 text-white py-1 px-4 rounded-md hover:bg-green-600 transition duration-300 ease-in-out">
-        <Link to={"resume"}> View CV</Link>
+    <button className="mt-4 w-full flex  bg-green-500 text-white py-1 px-4 rounded-md hover:bg-green-600 transition duration-300 ease-in-out">
+        <Link className='w-full'  to={"resume"}> View CV</Link>
     </button>
 </div>
 
