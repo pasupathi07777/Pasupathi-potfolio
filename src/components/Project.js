@@ -76,10 +76,10 @@ const Project = () => {
                   Click the button below to explore more projects and see my full range of work!
                 </p>
                 <Link
-                  className="bg-[#F97316] rounded-md font-semibold text-white px-4 py-2 hover:bg-[#e67e22] transition-colors duration-300"
+                  className="bg-[#F97316] rounded-md font-semibold text-white px-4 py-1 hover:bg-[#e67e22] transition-colors duration-300"
                   to="/myproject"
                 >
-                  See All Projects
+                  View All Projects
                 </Link>
               </div>
             );

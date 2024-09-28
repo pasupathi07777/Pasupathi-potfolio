@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import database from '../alldata/data';
 import Title from './title/Title';
 import fff from '../img/Resume.pdf';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     let { about } = useContext(database);
@@ -31,32 +32,55 @@ const About = () => {
                 </div>
 
                 {/* Right Section */}
-                <div className="p-6 rounded-lg w-full md:w-1/3">
+                <div className="p-6 rounded-lg w-full md:w-1/3 text-[16px]">
                     <div className="mb-4 space-y-2 capitalize">
-                        <p className="text-sm font-semibold text-gray-300">
+                        <p className=" text-sm font-semibold text-gray-300">
                             Name: <span className="font-normal">{about.name}</span>
                         </p>
-                        <p className="text-sm font-semibold text-gray-300">
+                        <p className="text-sm  font-semibold text-gray-300">
                             Email: <span className="font-normal text-orange-500">{about.gmail}</span>
                         </p>
-                        <p className="text-sm font-semibold text-gray-300">
+                        <p className="text-sm  font-semibold text-gray-300">
                             Age: <span className="font-normal">{about.age}</span>
                         </p>
-                        <p className="text-sm font-semibold text-gray-300">
+                        <p className="text-sm  font-semibold text-gray-300">
                             From: <span className="font-normal">{about.from}</span>
                         </p>
                     </div>
-                    <button className="mt-4 w-full bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-orange-600 transition duration-300 ease-in-out">
-                    
-                        <a
-                            href={fff}
-                            download
-                           
-                        >
-                            Download CV       
+                    {/* <div className="btn-group text-sm sm:gap-4 md:gap-0 sm:flex md:flex-col   ">
+                        <button className="mt-4 w-full bg-orange-500 text-white py-1 px-4 rounded-md hover:bg-orange-600 transition duration-300 ease-in-out">
 
-                        </a>
-                    </button>
+                            <a
+                                href={fff}
+                                download
+
+                            >
+                                Download CV
+
+                            </a>
+                        </button>
+                        <button className="mt-4 w-full bg-orange-500 text-white py-1 px-4 rounded-md hover:bg-orange-600 transition duration-300 ease-in-out">
+
+
+
+
+
+                            <Link to={"resume"}> View CV</Link>
+
+
+                        </button>
+                    </div> */}
+                    <div className="btn-group text-sm sm:gap-4 md:gap-0 sm:flex md:flex-col">
+    <button className="mt-4 w-full bg-orange-500 text-white py-1 px-4 rounded-md hover:bg-orange-600 transition duration-300 ease-in-out">
+        <a href={fff} download>
+            Download CV
+        </a>
+    </button>
+    <button className="mt-4 w-full bg-green-500 text-white py-1 px-4 rounded-md hover:bg-green-600 transition duration-300 ease-in-out">
+        <Link to={"resume"}> View CV</Link>
+    </button>
+</div>
+
                 </div>
             </section>
         </section>
