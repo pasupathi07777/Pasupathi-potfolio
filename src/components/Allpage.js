@@ -17,7 +17,7 @@ const Allpage = () => {
       <div className="bg-[#111418]  w-[250px] sticky top-0 left-0 bottom-0 right-0 h-screen hidden lg:block ">
         <NavBar />
       </div>
-      <div className="w-full h-screen overflow-y-scroll scroll-smooth relative   ">
+      <div className="w-full h-screen overflow-y-scroll scroll-smooth relative home scrollable-home   ">
 
         <div className="lg:hidden sticky top-0 left-0 right-0 z-50 ">
           <Header />

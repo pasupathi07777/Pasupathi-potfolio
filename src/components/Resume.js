@@ -8,7 +8,7 @@ const Resume = () => {
   let { about } = useContext(database);
 
   return (
-    <section id='resume' className='flex flex-col min-h-screen bg-[rgb(33,37,41)] w-full'>
+    <section id='resume' className='scrollable-home flex flex-col min-h-screen bg-[rgb(33,37,41)] w-full'>
       <div className="w-full">
         {/* Title Section */}
         <div className="relative w-full">

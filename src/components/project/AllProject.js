@@ -21,7 +21,7 @@ const AllProject = () => {
     }, []); // Empty dependency array ensures this effect runs only once after mounting
 
     return (
-        <main className="w-full flex flex-wrap justify-center sm:justify-start px-2 py-2 m-0 bg-[#111418] cursor-pointer">
+        <main className="w-full scrollable-home flex flex-wrap justify-center sm:justify-start px-2 py-2 m-0 bg-[#111418] cursor-pointer">
             {combinedProjects.map((project, i) => (
                 <div
                     key={i}
