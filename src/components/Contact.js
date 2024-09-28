@@ -20,7 +20,7 @@ const Contact = () => {
         <div>
           <div className="mb-8">
             <h3 className="text-xl font-bold text-white">ADDRESS</h3>
-            <p>Balaji illam, Near Pechiamman Kovil, Vayal Thiru, Vadalavilai, Kotter, Nagercoil-2, 629002</p>
+            <p>Balaji illam, Near Pechiaman Kovil, Vayal Thiru, Vadalavilai, Kotter, Nagercoil-2, 629002</p>
           </div>
 
           <div className="mb-8">
