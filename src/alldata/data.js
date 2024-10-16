@@ -65,7 +65,7 @@ export let Dataprovider = ({ children }) => {
     let details = {
         linkin_link: 'http://linkedin.com/in/pasupathi07777',
         gamil_link: "mailto:pasupathi0757@gamil.com",
-        git_link: "https://github.com/pasupathi07777?tab=repositories",
+        git_link: "https://github.com/pasupathi07777",
         name: "Pasupathi",
         my_domine: "I am Pasupathi",
 
