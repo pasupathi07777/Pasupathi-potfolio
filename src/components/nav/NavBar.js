@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
-import profile from '../../img/header.jpg'
-// import profile from '../../img/profile.jpg'
+// import profile from '../../img/header.jpg'
+import profile from '../../img/profile.jpg'
 import database from '../../alldata/data';
 const NavBar = () => {
   let { details } = useContext(database);
