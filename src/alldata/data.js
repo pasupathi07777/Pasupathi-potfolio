@@ -103,6 +103,14 @@ export let Dataprovider = ({ children }) => {
                 duration: "August 2024 - September 2024",
                 description: "Completed a one-month internship as a MERN Full Stack Developer, gaining hands-on experience in developing full stack applications using MongoDB, Express.js, React, and Node.js.",
             },
+            {
+    "jobType": "Full-Time",
+    "company": "FeatherSolution",
+    "duration": "November 2024 - Present",
+    "description": "Currently working as a MERN Stack and React Native Developer, contributing to the development of scalable full-stack web applications and cross-platform mobile apps. Engaged in building dynamic user interfaces, integrating APIs, and optimizing performance across platforms. Collaborating with teams to implement best practices in coding, debugging, and project management."
+}
+
+            
 
         ],
         certifications: [
@@ -111,7 +119,14 @@ export let Dataprovider = ({ children }) => {
                 course: "MERN Full Stack Development",
                 duration: "May 2024 to September 2024",
                 description: "Completed an intensive MERN stack course focused on mastering HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB. Gained hands-on experience in building full-stack web applications, developing RESTful APIs, and managing version control with Git."
-            }
+            },
+            {
+    "provider": "AKINFOPARK",
+    "course": "Full Stack Development",
+    "duration": "October 2024 to November 2024",
+    "description": "Completed a focused full stack development program designed to strengthen expertise in building modern web applications. Acquired hands-on experience with front-end technologies like HTML, CSS, and JavaScript, as well as back-end frameworks including Node.js and Express.js. Gained practical knowledge in database management using MongoDB and PostgreSQL, along with exposure to Git for version control and Agile methodologies for project management."
+}
+
         ]
 
     };
