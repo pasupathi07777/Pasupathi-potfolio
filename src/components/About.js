@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import database from '../alldata/data';
 import Title from './title/Title';
-import fff from '../img/Resume.pdf';
+import fff from '../img/Pasupathi-Resume.pdf';
 import { Link } from 'react-router-dom';
 
 const About = () => {
