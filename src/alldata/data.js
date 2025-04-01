@@ -86,7 +86,7 @@ export let Dataprovider = ({ children }) => {
         title: "About Me",
         para_1: "Hi, my name is Pasupathi. Im a MERN Full Stack Developer.",
         para_2: "I am proficient in frontend skills like:",
-        skills: "HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React ,React Native ,Redux, Node.js , Express.js , MongoDB , Python",
+        skills: "HTML, CSS, JavaScript,Typescript , Bootstrap, Tailwind CSS, React ,React Native ,Redux, Node.js , Express.js , MongoDB , Python,Java",
         title_2: "Education",
         college_1: "NMS Kamaraj College of Education",
         college_1_year: "2017-2020",
