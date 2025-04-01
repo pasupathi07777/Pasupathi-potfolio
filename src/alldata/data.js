@@ -13,7 +13,7 @@ import img2 from '../img/projectThumbnile/udemy.png'
 
 
 // resume
-import Pasupathi_Resume from '../img/Pasupathi-Resume.pdf'
+import Pasupathi_Resume from '../img/Resume.pdf'
 
 //advance project
 // img / project-1
