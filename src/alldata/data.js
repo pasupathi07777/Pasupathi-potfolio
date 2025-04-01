@@ -80,7 +80,7 @@ export let Dataprovider = ({ children }) => {
 
     let about = {
         name: "Pasupathi",
-        age: 22,
+        age: 23,
         gmail: "pasupathi0757@gmail.com",
         from: "nagercoil",
         title: "About Me",
@@ -93,26 +93,30 @@ export let Dataprovider = ({ children }) => {
         college_1_degree: "Diploma in Mechanical Engineering",
         college_2: "Satyam College of Engineering and Technology",
         college_2_year: "2023-2026",
-        college_2_degree: "Bachelor of Engineering (BE)",
+        college_2_degree: "Bachelor of Engineering (Correspondence)",
         address: "Balaji illam, Near Pechiamman Kovil, Vayal Thiru, Vadalavilai, Kotter, Nagercoil-2, 629002",
 
         experience: [
             {
+    "jobType": "Full-Time",
+    "company": "FeatherSolution",
+    "duration": "November 2024 - Feb 2025",
+    "description": "Currently working as a MERN Stack and React Native Developer, contributing to the development of scalable full-stack web applications and cross-platform mobile apps. Engaged in building dynamic user interfaces, integrating APIs, and optimizing performance across platforms. Collaborating with teams to implement best practices in coding, debugging, and project management."
+},
+          
+            {
+           "jobType": "Intern",
+    "company": "AKINFOPARK",
+    "duration": "October 2024 - November 2024",
+    "description": "Completed a focused full stack development program designed to strengthen expertise in building modern web applications. Acquired hands-on experience with front-end technologies like HTML, CSS, and JavaScript, as well as back-end frameworks including Node.js and Express.js. Gained practical knowledge in database management using MongoDB and PostgreSQL, along with exposure to Git for version control and Agile methodologies for project management."},
+              {
                 jobType: "Intern",
                 company: "Error Makes Clever",
                 duration: "August 2024 - September 2024",
                 description: "Completed a one-month internship as a MERN Full Stack Developer, gaining hands-on experience in developing full stack applications using MongoDB, Express.js, React, and Node.js.",
-            },
-            {
-    "jobType": "Full-Time",
-    "company": "FeatherSolution",
-    "duration": "November 2024 - Present",
-    "description": "Currently working as a MERN Stack and React Native Developer, contributing to the development of scalable full-stack web applications and cross-platform mobile apps. Engaged in building dynamic user interfaces, integrating APIs, and optimizing performance across platforms. Collaborating with teams to implement best practices in coding, debugging, and project management."
-}
-
-            
-
+            }
         ],
+        
         certifications: [
             {
                 provider: "Error Makes Clever Academy",
